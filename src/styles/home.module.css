@@ -1,0 +1,12 @@
+.header{
+    color: azure;
+}
+
+.heroWrapper{
+    composes: hero-nav-background from './layout.css';
+    margin-top:0;
+}
+
+.hero h1{
+    margin-top:0;
+}
