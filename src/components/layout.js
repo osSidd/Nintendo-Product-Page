@@ -6,9 +6,8 @@ import Footer from './footer'
 export default function Layout({children}){
     return (
         <div className='layout-home'>
-            <div className='nav-wrapper'>
-                <Navbar/>
-            </div>
+            <Navbar/>
+            
             {children}
             <Footer/>
         </div>

@@ -10,9 +10,7 @@ function IndexPage(){
     <Layout>
       <div>
         {/* hero section */}
-        <div> 
-          <Hero/>
-        </div>
+        <Hero/>
       </div>
     </Layout>
    
