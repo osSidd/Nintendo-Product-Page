@@ -11,3 +11,8 @@
     border-radius: 8px;
     font-weight: 500;
 }
+
+.wrapper{
+    width: 1024px;
+    margin:auto;
+}

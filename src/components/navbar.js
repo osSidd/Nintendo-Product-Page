@@ -4,8 +4,8 @@ import * as React from 'react'
 
 export default function Navbar(){
     return (
-        <div className="bg-hero-bg py-2">
-            <nav className="w-10/12 m-auto">
+        <div className="bg-hero-bg pt-4">
+            <nav className="wrapper m-auto">
                 <h1 className="text-hero-logo text-logo font-semibold">Header Logo</h1>
                 {/* <Link to="/" className='link'>Home</Link>
                 <Link to="/about" className='link'>About</Link>
