@@ -1,9 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/pages/**/*.{js,jsx,ts,tsx}",
-    "./src/components/**/*.{js,jsx,ts,tsx}",
-  ],
+  // content: [
+  //   "./src/pages/**/*.{js,jsx,ts,tsx}",
+  //   "./src/components/**/*.{js,jsx,ts,tsx}",
+  //   "./index.html"
+  // ],
+  content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
       colors:{
@@ -25,7 +27,7 @@ module.exports = {
         'test-size': '36px',
       },
       lineHeight:{
-        title: '72px',
+        title: '64px',
         description: '27px',
         testimonial: '48px',
       },

@@ -1,5 +1,4 @@
-import * as React from 'react'
-import service from '../../../static/services.png'
+import service from '../../assets/services.png'
 
 export default function Figure(){
     return (

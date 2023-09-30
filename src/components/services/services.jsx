@@ -1,4 +1,3 @@
-import * as React from 'react'
 import Figure from './figure'
 
 export default function Services(){
