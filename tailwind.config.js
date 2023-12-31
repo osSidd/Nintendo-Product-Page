@@ -9,8 +9,12 @@ module.exports = {
   theme: {
     extend: {
       colors:{
+        'main':'#e60012',
         'hero-bg': '#1f2937',
-        'footer-bg': '#1f2937',
+        'copyright-bg':'#242424',
+        'copyright-address':'#d0d0d0',
+        'copyright-links':'#ffffff',
+        'footer-bg': '#242424',
         'footer-text': '#e5e7eb',
         'hero-title': '#f9faf8',
         'hero-secondary': '#e5e7eb',
