@@ -1,0 +1,90 @@
+[
+    {
+        "heading": {
+            "label": "About Nintendo",
+            "href": "https://www.nintendo.com/us/about/"
+        },
+        "links": [
+            {
+                "label": "Careers",
+                "href": "https://careers.nintendo.com/"
+            },
+            {
+                "label": "Corporate Social Responsibility",
+                "href": "https://www.nintendo.com/us/about/csr/"
+            }            
+        ]
+    },
+    {
+        "heading": {
+            "label":"Shop",
+            "href": "https://www.nintendo.com/us/store/"
+        },
+        "links": [
+            {
+                "label": "Games",
+                "href": "https://www.nintendo.com/us/store/games/"
+            },
+            {
+                "label": "Hardware",
+                "href": "https://www.nintendo.com/us/store/hardware/"
+            },
+            {
+                "label": "Merchendise",
+                "href": "https://www.nintendo.com/us/store/merchandise/"
+            },
+            {
+                "label": "Sales & deals",
+                "href": "https://www.nintendo.com/us/store/sales-and-deals/"
+            },
+            {
+                "label": "Exclusives",
+                "href": "https://www.nintendo.com/us/store/exclusives/"
+            },
+            {
+                "label": "Online service",
+                "href": "https://www.nintendo.com/us/switch/online/"
+            },
+            {
+                "label": "Nintendo NY store",
+                "href": "https://www.nintendonyc.com/"
+            }            
+        ]
+    },
+    {
+        "heading": {
+            "label": "My Nintendo Store orders",
+            "href": "https://www.nintendo.com/us/orders/"
+        },
+        "links": [
+            {
+                "label": "Order details",
+                "href": "https://www.nintendo.com/us/orders/"
+            },
+            {
+                "label": "Shipping info",
+                "href": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/15575?_gl=1*1dpjal0*_ga*Njg1ODgwMzAxLjE3MDQwMDU2NDI.*_ga_F6ERC4HMNZ*MTcwNDEyNzU0Ny4yLjEuMTcwNDEyODI1OS4wLjAuMA.."
+            },
+            {
+                "label": "Returns & exchanges",
+                "href": "https://www.nintendo.com/us/returns-exchanges/"
+            },
+            {
+                "label": "FAQ",
+                "href": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/15578?_gl=1*8prj22*_ga*Njg1ODgwMzAxLjE3MDQwMDU2NDI.*_ga_F6ERC4HMNZ*MTcwNDEyNzU0Ny4yLjEuMTcwNDEyODI1OS4wLjAuMA.."
+            }
+        ]
+    },
+    {
+        "heading": {
+            "label": "",
+            "href": ""
+        },
+        "links": [
+            {
+                "label": "",
+                "href": ""
+            }
+        ]
+    }
+]
