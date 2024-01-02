@@ -4,7 +4,7 @@ import esrb from '../../assets/footer/esrb.svg'
 export default function FooterLinks(){
     return (
         <section
-            className='grid grid-cols-4 gap-y-8 px-4 pt-12 pb-32 relative'
+            className='grid md:grid-cols-3 lg:grid-cols-4 gap-y-8 px-4 pt-12 pb-32 relative'
         >
             {
                 footerLinks.map(links => (
@@ -23,7 +23,7 @@ export default function FooterLinks(){
                 ))
             }
             <a href="https://www.esrb.org/EPCConfirm/891/" rel='noreferrer' target='_blank'>
-                <img className='absolute bottom-6 right-0 w-1/6' src={esrb} alt="esrb" />
+                <img className='absolute bottom-6 right-0 w-2/6 md:w-1/6' src={esrb} alt="esrb" />
             </a>
         </section>
     )
