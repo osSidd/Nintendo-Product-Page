@@ -15,7 +15,7 @@ export default function FooterLinks(){
                         {
                             links.links.map(link => (
                                 <li key={link.href}>
-                                    <a className='text-main font-semibold underline-offset-4 decoration-main decoration-2 hover:underline' href={link.href}>{link.label}</a>
+                                    <a className='text-main font-semibold underline-offset-4 decoration-main decoration-2 hover:underline' href={link.href} rel='noreferrer' target='_blank'>{link.label}</a>
                                 </li>
                             ))
                         }
