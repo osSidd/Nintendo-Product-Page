@@ -15,13 +15,14 @@ module.exports = {
         'copyright-address':'#d0d0d0',
         'copyright-links':'#ffffff',
         'footer-bg': '#242424',
-        'footer-text': '#e5e7eb',
+        'footer-heading': '#484848',
         'hero-title': '#f9faf8',
         'hero-secondary': '#e5e7eb',
         'hero-logo': '#f9faf8',
         'testimonial': '#e5e7eb',
         'test-text': '#1f2937',
         'signup': '#3882f6',
+        'border':'#dadada'
       },
       fontSize:{
         logo: '24px',

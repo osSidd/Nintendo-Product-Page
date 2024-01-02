@@ -74,16 +74,78 @@
                 "href": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/15578?_gl=1*8prj22*_ga*Njg1ODgwMzAxLjE3MDQwMDU2NDI.*_ga_F6ERC4HMNZ*MTcwNDEyNzU0Ny4yLjEuMTcwNDEyODI1OS4wLjAuMA.."
             }
         ]
-    },
-    {
+    },{
         "heading": {
-            "label": "",
-            "href": ""
+            "label": "Support",
+            "href": "https://en-americas-support.nintendo.com/app/home?_gl=1*14kwr9j*_ga*Njg1ODgwMzAxLjE3MDQwMDU2NDI.*_ga_F6ERC4HMNZ*MTcwNDE3Mzg0OC4zLjEuMTcwNDE3Mzg1MS4wLjAuMA.."
         },
         "links": [
             {
-                "label": "",
-                "href": ""
+                "label": "Nintendo Switch",
+                "href": "https://en-americas-support.nintendo.com/app/products/detail/p/989?_gl=1*14kwr9j*_ga*Njg1ODgwMzAxLjE3MDQwMDU2NDI.*_ga_F6ERC4HMNZ*MTcwNDE3Mzg0OC4zLjEuMTcwNDE3Mzg1MS4wLjAuMA.."
+            },
+            {
+                "label": "Nintendo Account",
+                "href": "https://en-americas-support.nintendo.com/app/products/detail/p/992?_gl=1*1we24f1*_ga*Njg1ODgwMzAxLjE3MDQwMDU2NDI.*_ga_F6ERC4HMNZ*MTcwNDE3Mzg0OC4zLjEuMTcwNDE3Mzg1MS4wLjAuMA.."
+            },
+            {
+                "label": "Other systems",
+                "href": "https://en-americas-support.nintendo.com/app/products/detail/p/172?_gl=1*1we24f1*_ga*Njg1ODgwMzAxLjE3MDQwMDU2NDI.*_ga_F6ERC4HMNZ*MTcwNDE3Mzg0OC4zLjEuMTcwNDE3Mzg1MS4wLjAuMA.."
+            },
+            {
+                "label": "Repairs",
+                "href": "https://en-americas-support.nintendo.com/app/products/detail/p/995?_gl=1*1we24f1*_ga*Njg1ODgwMzAxLjE3MDQwMDU2NDI.*_ga_F6ERC4HMNZ*MTcwNDE3Mzg0OC4zLjEuMTcwNDE3Mzg1MS4wLjAuMA.."
+            },
+            {
+                "label": "Nintendo product recycling",
+                "href": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/10276/?_gl=1*1we24f1*_ga*Njg1ODgwMzAxLjE3MDQwMDU2NDI.*_ga_F6ERC4HMNZ*MTcwNDE3Mzg0OC4zLjEuMTcwNDE3Mzg1MS4wLjAuMA.."
+            }
+        ]
+    },{
+        "heading": {
+            "label": "Parents",
+            "href": "https://play.nintendo.com/parents/?_gl=1*g2c7a1*_ga*Njg1ODgwMzAxLjE3MDQwMDU2NDI.*_ga_F6ERC4HMNZ*MTcwNDE3Mzg0OC4zLjEuMTcwNDE3Mzg1MS4wLjAuMA.."
+        },
+        "links": [
+            {
+                "label": "Info for parents",
+                "href": "https://play.nintendo.com/parents/crash-courses/?_gl=1*q1jqpv*_ga*Njg1ODgwMzAxLjE3MDQwMDU2NDI.*_ga_F6ERC4HMNZ*MTcwNDE3Mzg0OC4zLjEuMTcwNDE3Mzg1MS4wLjAuMA.."
+            },
+            {
+                "label": "Parental controls",
+                "href": "https://play.nintendo.com/parents/crash-courses/parental-controls/?_gl=1*q1jqpv*_ga*Njg1ODgwMzAxLjE3MDQwMDU2NDI.*_ga_F6ERC4HMNZ*MTcwNDE3Mzg0OC4zLjEuMTcwNDE3Mzg1MS4wLjAuMA.."
+            }
+        ]
+    },
+    {
+        "heading": {
+            "label": "Community",
+            "href": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/43419?_gl=1*q1jqpv*_ga*Njg1ODgwMzAxLjE3MDQwMDU2NDI.*_ga_F6ERC4HMNZ*MTcwNDE3Mzg0OC4zLjEuMTcwNDE3Mzg1MS4wLjAuMA.."
+        },
+        "links": [
+            {
+                "label": "Community guidelines" ,
+                "href": "https://www.nintendo.com/us/code-of-conduct/"
+            },
+            {
+                "label": "Online safety principles",
+                "href": "https://www.nintendo.com/us/online-safety-principles/"
+            }
+        ]
+    },
+    {
+        "heading": {
+            "label": "Privacy",
+            "href": "https://www.nintendo.com/us/privacy-policy/"
+        },
+        "links": [
+            {
+                "label": "Privacy policy",
+                "href": "https://www.nintendo.com/us/privacy-policy/"
+            },
+            {
+                "label": "Cookies and interest-based ads",
+                "href": "https://www.nintendo.com/us/privacy-request/#cookies"
             }
         ]
     }
