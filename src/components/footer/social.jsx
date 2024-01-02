@@ -1,4 +1,4 @@
-import nintendo from '../../assets/nintendo.svg'
+import nintendo from '../../assets/footer/nintendo.svg'
 import facebook from '../../assets/footer/facebook.svg'
 import instagram from '../../assets/footer/instagram.svg'
 import twitter from '../../assets/footer/twitter.svg'

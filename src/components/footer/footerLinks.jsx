@@ -1,5 +1,5 @@
 import footerLinks from '../../static/footerLinks.json'
-import esrb from '../../assets/esrb.svg'
+import esrb from '../../assets/footer/esrb.svg'
 
 export default function FooterLinks(){
     return (
