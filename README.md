@@ -18,3 +18,8 @@ npm run dev
 - Customizing the css text-decoration property (underline)
 - Making component reusable
 - Making content responsive using tailwind css default screen breakpoints
+
+## Tasks remaning
+- [ ] Add proper font family for each sections
+- [ ] Add transition in footer & copyright links
+- [ ] Add hover effect on carousel card
