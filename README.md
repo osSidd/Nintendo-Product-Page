@@ -15,4 +15,6 @@ npm run dev
 
 ## Learning
 - Using the + css selector in tailwindcss
-- Customizing the css text-decoration property (underline) 
+- Customizing the css text-decoration property (underline)
+- Making component reusable
+- Making content responsive using tailwind css default screen breakpoints
