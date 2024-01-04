@@ -1,18 +1,21 @@
-export default function CarouselCard(){
+export default function CarouselCard({product}){
     return (
-        <div className='border border-border max-w-xs rounded-2xl overflow-hidden cursor-pointer'>
-            <img className="transition-all duration-500 ease-in-out" src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_300/ncom/software/switch/70010000048967/06239b4e0fc9c468b2e031e7df0add51a23f0c2dd2b4fb6107d1cd886675043b" alt="ooblets" />
+        <div className='flex-shrink-0 mr-6 border border-border w-72 rounded-2xl overflow-hidden cursor-pointer'>
+            <img className="transition-all duration-500 ease-in-out" src={product.img} alt="ooblets" />
             <div className="px-4 py-4">
-                <h3 className="font-semibold">Ooblets</h3>
-                <p className="text-sm mb-10">9/1/22</p>
-                <p className="bg-red-600 w-fit rounded-full px-2 pb-0.5 text-white text-xs font-semibold">Sale ends: 15 hr.</p>
+                <h3 className="font-semibold">{product.name}</h3>
+                <p className="text-sm mb-10">{product.date}</p>
+                {product.offer ? <p className="bg-red-600 w-fit rounded-full px-2 pb-0.5 text-white text-xs font-semibold">
+                    {product.offer}
+                </p>: null}
                 <div className="flex items-center mt-2">
-                    <p className="font-bold">$19.99</p>
-                    <p className='ml-4 line-through'>$29.99</p>
+                    <p className="font-bold">${product.sellingPrice || product.mrp}</p>
+                    {product.sellingPrice ? <p className='ml-4 line-through'>${product.mrp}</p>: null}
+                    {product.discount ? <p className="ml-4 bg-red-600 px-4 text-white">{product.discount}%</p> : null}
                 </div>
                 <div className="flex items-center justify-between mt-2">
-                    <p className="border-l-2 border-red-400 pl-2">Nintendo Switch</p>
-                    <span>heart</span>
+                    <p className="border-l-2 border-red-400 pl-2">{product.platform}</p>
+                    <span><i className="fa fa-heart-o text-red-500 text-xl"></i></span>
                 </div>
             </div>
         </div>
