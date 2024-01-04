@@ -20,10 +20,10 @@ export default function Carousel(){
     }
 console.log(x)
     return(
-        <div className="my-12 px-6 overflow-hidden relative">
+        <div className="mt-8 mb-12 px-6 overflow-hidden relative">
             <div 
                 style={{transform: x ? `translateX(${x}rem)`: null}} 
-                className="mt-6 flex items-start transition-all duration-500 ease-out"
+                className="mt-6 flex items-start transition-all duration-500 ease-out w-full"
             >
                 {
                     products.map(product => (
@@ -53,9 +53,9 @@ function CarouselButton({id, content, handleClick}){
         <button 
             id={id} 
             onClick={handleClick} 
-            className={`bg-gray-400 hover:bg-gray-800 opacity-50 border-none p-4 mr-4 absolute top-0 ${content}-0 h-full w-20 rounded-lg`}
+            className={`bg-gray-800 opacity-10 hover:opacity-60 border-none p-4 absolute top-0 ${content}-0 h-full w-20 rounded-lg`}
         >
-            <i className={`text-6xl text-white fa fa-angle-${content} pointer-events-none`}></i>
+            <i className={`text-8xl text-white font-extrabold fa fa-angle-${content} pointer-events-none`}></i>
         </button>
     )
 }

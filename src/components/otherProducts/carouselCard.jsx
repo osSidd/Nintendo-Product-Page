@@ -5,7 +5,7 @@ export default function CarouselCard({product}){
             <div className="px-4 py-4">
                 <h3 className="font-semibold">{product.name}</h3>
                 <p className="text-sm mb-10">{product.date}</p>
-                {product.offer ? <p className="bg-red-600 w-fit rounded-full px-2 pb-0.5 text-white text-xs font-semibold">
+                {product.offer ? <p className="bg-red-600 w-fit rounded-full px-2 py-0.5 text-white text-xs font-semibold">
                     {product.offer}
                 </p>: null}
                 <div className="flex items-center mt-2">
