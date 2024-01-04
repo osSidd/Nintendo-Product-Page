@@ -1,0 +1,82 @@
+[
+    {
+        "id":0,
+        "label":"Release date",
+        "content": ["October 5, 2017"],
+        "link": false
+    },
+    {
+        "id":1,
+        "label":"No. of players",
+        "content": [
+            {
+                "label": "Single System (1)",
+                "href": "https://www.nintendo.com/us/search/#cat=gme&f=playerCount&playerCount=Single%20Player"
+            },
+            {
+                "label": "Local wireless (1)",
+                "href": "https://www.nintendo.com/us/search/#cat=gme&f=playerCount&playerCount=Single%20Player"
+            },
+            {
+                "label": "Online (1-4)",
+                "href": "https://www.nintendo.com/us/search/#cat=gme&f=playerCount&playerCount=4%2B"
+            }
+    ],
+        "link": true
+    },
+    {
+        "id":2,
+        "label":"Genre",
+        "content": [
+            {
+                "label": "Role-Playing",
+                "href": "https://www.nintendo.com/us/search/#cat=gme&f=genres&genres=Role-Playing"
+            },
+            {
+                "label": "Simulation",
+                "href": "https://www.nintendo.com/us/search/#cat=gme&f=genres&genres=Simulation"
+            }
+        ],
+        "link": true
+    },
+    {
+        "id":3,
+        "label":"Publisher",
+        "content": [
+            {
+                "label": "ConcernedApe",
+                "href": "https://www.nintendo.com/us/search/#cat=gme&f=softwarePublisher&softwarePublisher=ConcernedApe"
+            }
+        ],
+        "link": true
+    },
+    {
+        "id":4,
+        "label":"ESRB rating",
+        "content": [
+            {
+                "label": "Everyone 10+",
+                "href": "https://www.nintendo.com/us/search/#cat=gme&sort=df&f=esrbRating&esrbRating=E10"
+            }
+        ],
+        "link": true
+    },
+    {
+        "id":5,
+        "label":"Supported play modes",
+        "content": ["TV mode", "Tabletop mode", "Handheld mode"],
+        "link": false
+    },
+    {
+        "id":6,
+        "label":"Game file size",
+        "content": ["1.5 GB"],
+        "link": false
+    },
+    {
+        "id":7,
+        "label":"Supported languages",
+        "content": ["English", "French", "German", "Italian", "Japanese", "Korean", "Portuguese", "Russian", "Simplified Chinese", "Spanish", "Traditional Chinese"],
+        "link": false
+    }
+]
