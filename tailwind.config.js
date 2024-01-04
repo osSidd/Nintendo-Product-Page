@@ -18,7 +18,7 @@ export default {
         'footer-heading': '#484848',
         'hero-title': '#f9faf8',
         'hero-secondary': '#e5e7eb',
-        'hero-logo': '#f9faf8',
+        'online': '#f8f8f8',
         'testimonial': '#e5e7eb',
         'test-text': '#1f2937',
         'signup': '#3882f6',
