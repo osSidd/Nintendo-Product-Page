@@ -10,7 +10,7 @@ export default {
     extend: {
       colors:{
         'main':'#e60012',
-        'hero-bg': '#1f2937',
+        'hero-bg': '#d5eff9',
         'copyright-bg':'#242424',
         'copyright-address':'#d0d0d0',
         'copyright-links':'#ffffff',

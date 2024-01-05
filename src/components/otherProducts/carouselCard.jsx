@@ -1,3 +1,5 @@
+import Platform from "../platform";
+
 export default function CarouselCard({product}){
     return (
         <div className='flex-shrink-0 mr-6 border border-border w-72 rounded-2xl overflow-hidden cursor-pointer'>
@@ -14,7 +16,7 @@ export default function CarouselCard({product}){
                     {product.discount ? <p className="ml-4 bg-red-600 px-4 text-white">{product.discount}%</p> : null}
                 </div>
                 <div className="flex items-center justify-between mt-2">
-                    <p className="border-l-2 border-red-400 pl-2">{product.platform}</p>
+                    <Platform platform={product.platform}/>
                     <span><i className="fa fa-heart-o text-red-500 text-xl"></i></span>
                 </div>
             </div>

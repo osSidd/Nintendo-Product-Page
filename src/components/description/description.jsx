@@ -21,14 +21,14 @@ export default function Description(){
                             Now with Multiplayer! Invite 1-3 players to join you in the valley! Players can work together to build a thriving farm, share resources, and build relationships with townspeople or each other. As more hands are better than one, players have the option to scale profit margin on produce sold for a more challenging experience.
                         </p>
                         <button className='text-main' onClick={toggleDisplay}>
-                            {displayPara ? <span className='text-3xl font-extrabold mr-1'>&#8722;</span> :
-                            <span className='text-3xl font-extrabold mr-1'>&#43;</span>}
+                            {displayPara ? <span className='text-3xl font-extrabold mt-0.5 mr-1'>&#8722;</span> :
+                            <span className='text-3xl font-extrabold mt-0.5 mr-1'>&#43;</span>}
                             <span className='text-xl font-bold'>Read more</span>
                         </button>
                         <div className='mt-1'>
                             <small>Software description provided by the publisher.</small>
                         </div>
-                        <a className='bg-main text-white font-bold px-6 py-4 rounded-xl mt-4 block w-fit' href="http://www.stardewvalley.net/" target='_blank' rel='noreferrer'>Explore this game&apos;s official website</a>
+                        <a className='bg-main text-white text-lg font-bold px-6 py-3 rounded-xl mt-4 block w-fit' href="http://www.stardewvalley.net/" target='_blank' rel='noreferrer'>Explore this game&apos;s official website</a>
                     </div>
                     <div className='mt-6 lg:mt-0 lg:w-6/12 rounded-2xl overflow-hidden'>
                         <img className='w-full' src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_600/ncom/en_US/games/switch/s/stardew-valley-switch/hero" alt="description" />
