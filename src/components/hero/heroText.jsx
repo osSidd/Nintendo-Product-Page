@@ -2,7 +2,7 @@ import Platform from '../platform'
 import download from '../../assets/hero/download.svg'
 export default function HeroText(){
     return(
-        <div className='lg:w-5/12 mt-2 lg:mt-0'>
+        <div className='lg:w-5/12 mt-2 lg:mt-0 pl-10'>
             <Platform platform='Nintendo Switch'/>
             <h1 className='text-xl lg:text-3xl font-bold mt-4 lg:mt-6'>Stardew Valley</h1>
             <div className='flex justify-between mt-2 lg:mt-6'>

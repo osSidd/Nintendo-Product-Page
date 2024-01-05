@@ -36,6 +36,22 @@ export default {
         description: '27px',
         testimonial: '48px',
       },
+      keyframes:{
+        translateLeft:{
+          '0%':{transform: 'translateX(100%) scale(0.75)'},
+          '50%':{transform: 'scale(0.75)'},
+          '100%': {transform: 'translateX(0) scale(1)'}
+        },
+        translateRight:{
+          '0%':{transform: 'translateX(-100%) scale(0.75)'},
+          '50%':{transform: 'scale(0.75)'},
+          '100%': {transform: 'translateX(0) scale(1)'}
+        }
+      },
+      animation:{
+        'translate-img-left': 'translateLeft 0.5s linear',
+        'translate-img-right': 'translateRight 0.5s linear',
+      }
     },
   },
   plugins: [],
