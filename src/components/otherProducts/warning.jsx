@@ -1,6 +1,6 @@
 export default function Warning(){
     return (
-        <section className="[&>div+div]:mt-2">
+        <div className="[&>div+div]:mt-2">
             <Content>
                 WARNING: If you have epilepsy or have had seizures or other unusual reactions to flashing lights or patterns, consult a doctor before playing video games. All users should read the Health and Safety Information available in the system settings before using this software.
             </Content>
@@ -10,7 +10,7 @@ export default function Warning(){
             <Content>                
                 Stardew Valley © ConcernedApe LLC 2016-2020. All rights reserved.
             </Content>
-        </section>
+        </div>
     )
 }
 

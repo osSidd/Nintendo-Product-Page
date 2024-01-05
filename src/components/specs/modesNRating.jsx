@@ -5,7 +5,7 @@ import handMode from '../../assets/specs/handMode.svg'
 
 export default function ModesNRating(){
     return (
-        <section className='mb-12 flex flex-col lg:flex-row gap-x-8 gap-y-4 lg:gap-y-0'>
+        <div className='mb-12 flex flex-col lg:flex-row gap-x-8 gap-y-4 lg:gap-y-0'>
             <div className='lg:w-1/2 pt-6 pb-12 px-10 bg-online rounded-xl'>
                 <p className='text-center font-semibold mb-4'>ESRB rating</p>
                 <a className='flex flex-col lg:flex-row items-center bg-white py-4 pr-2 lg:pl-8 lg:pr-14 rounded-xl shadow-lg' href="https://www.esrb.org/ratings-guide/" rel="noreferrer" target="_blank">
@@ -39,6 +39,6 @@ export default function ModesNRating(){
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     )
 }

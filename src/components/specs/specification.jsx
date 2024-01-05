@@ -5,10 +5,12 @@ import Online from "./online";
 
 export default function Specifications(){
     return(
-        <Wrapper b='20'>
-            <ModesNRating/>
-            <Details/>
-            <Online/>
-        </Wrapper>
+        <section>
+            <Wrapper>
+                <ModesNRating/>
+                <Details/>
+                <Online/>
+            </Wrapper>
+        </section>
     )
 }

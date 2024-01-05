@@ -3,7 +3,7 @@ import specData from '../../static/specs.json'
 
 export default function Details(){
     return (
-        <section className='mb-32'>
+        <div className='mb-32'>
             <ul className='[&>li:first-child]:border-t border-border'>
                 {
                     specIcons.map((icon, index) => (
@@ -34,6 +34,6 @@ export default function Details(){
                     ))
                 }
             </ul>
-        </section>
+        </div>
     )
 }
