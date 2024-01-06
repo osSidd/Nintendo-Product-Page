@@ -5,6 +5,7 @@ export default function LightBox({toggleModal=undefined, modalDisplay}){
 
     const [imgIndex, setImgIndex] = useState(0)
     const [animateClass, setAnimateClass] = useState('')
+    const [x, setX] = useState(0)
 
     function removeAnimation(){
         setTimeout(() => {
@@ -30,8 +31,22 @@ export default function LightBox({toggleModal=undefined, modalDisplay}){
         }
     }
 
+    function transformX(id){
+        switch(id){
+            case 'L':
+                setX(0)
+                return 
+            case 'R':
+                setX(-7)
+                return 
+            default:
+                return
+        }
+    }
+
     return(
         <div className=" lg:w-7/12">
+
             <div className=" relative overflow-hidden">
                 <span onClick={toggleModal} className={`z-20 absolute ${modalDisplay ? 'block': 'hidden'} text-white text-4xl right-4 top-2`} ><i className='pointer-events-none fa fa-close'></i></span>
                 <img className={`${animateClass} rounded-2xl`} src={indicators[imgIndex]} alt="lightbox" />
@@ -40,8 +55,8 @@ export default function LightBox({toggleModal=undefined, modalDisplay}){
                     <span onClick={(e) => {e.stopPropagation(); toggleImage('R')}}><i className="cursor-pointer fa fa-angle-right font-extrabold z-10"></i></span>
                 </div>
             </div>
-            <div className='overflow-hidden mt-5'>
-                <div className='flex w-screen'>
+            <div className='overflow-hidden mt-5 relative'>
+                <div style={{transform: `translateX(${x}rem)`}} className='flex w-screen z-0 transition-all duration-300 ease-in-out'>
                     {
                         indicators.map((item, index, arr) => (
                             <div key={item} className='w-24 mr-4 relative'>
@@ -51,6 +66,8 @@ export default function LightBox({toggleModal=undefined, modalDisplay}){
                         ))
                     }
                 </div>
+                <span onClick={() => transformX('L')} className={`${x ? 'block' : 'hidden'} text-4xl align-middle leading-9 text-white absolute top-0 left-0 bg-gray-700 opacity-20 hover:opacity-80 px-5 py-2 rounded-2xl`}><i className='fa fa-angle-left font-extrabold'></i></span>
+                <span onClick={() => transformX('R')} className={`${x < 0 ? 'hidden' : 'block'} text-4xl align-middle leading-9 text-white absolute top-0 right-0 bg-gray-700 opacity-20 hover:opacity-80 px-5 py-2 rounded-2xl`}><i className='fa fa-angle-right font-extrabold'></i></span>
             </div>
         </div>
 
