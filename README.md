@@ -18,8 +18,15 @@ npm run dev
 - Customizing the css text-decoration property (underline)
 - Making component reusable
 - Making content responsive using tailwind css default screen breakpoints
+- Making a lightbox component using js and css
+- Making carousel using js and css
+- Adding animation to carousel and lightbox components
+- Making background blur using backdrop-filter property
 
 ## Tasks remaning
+- [x] Add hover effect on carousel card
 - [ ] Add proper font family for each sections
 - [ ] Add transition in footer & copyright links
-- [ ] Add hover effect on carousel card
+- [ ] Add dropdown menu items
+- [ ] Add animation to hero and description buttons
+- [ ] Make proper carousel using transform property
