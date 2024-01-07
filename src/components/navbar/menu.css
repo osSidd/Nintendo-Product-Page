@@ -1,0 +1,5 @@
+.change:hover{
+    --main: #e60012;
+    color: var(--main);
+    fill: var(--main);
+}

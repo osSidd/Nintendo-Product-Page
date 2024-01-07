@@ -5,7 +5,7 @@ export default function Offers(){
     return (
         <div className='flex items-center justify-center py-3 bg-online'>
             <div className='flex items-center mr-4'>
-                <img className='mr-1' src={shipping} alt='shipping' />
+                <img className='mr-2' src={shipping} alt='shipping' />
                 <p className='mr-1'>
                     <span className='mr-1 font-bold'>Free shipping</span>
                     on orders $50 or more.
@@ -14,7 +14,7 @@ export default function Offers(){
                 </a>
             </div>
             <div className='flex items-center border-l border-gray-400 pl-4'>
-                <img className='mr-1' src={coins} alt='coins' />
+                <img className='mr-2' src={coins} alt='coins' />
                 <p>
                     <span className='mr-1'>Earn</span>
                     <a className='underline mr-1 font-bold' href="https://my.nintendo.com/about_gold_point?_gl=1*14cicqn*_ga*Njg1ODgwMzAxLjE3MDQwMDU2NDI.*_ga_F6ERC4HMNZ*MTcwNDUyMTUxMi4yMi4xLjE3MDQ1MjI3OTMuMC4wLjA." target="_blank" rel="noreferrer">My Nintendo Points
