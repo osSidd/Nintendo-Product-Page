@@ -18,7 +18,7 @@ export default function Carousel(){
             }
         }
     }
-console.log(x)
+
     return(
         <div className="mt-8 mb-12 px-6 overflow-hidden relative">
             <div 

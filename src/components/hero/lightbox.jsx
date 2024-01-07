@@ -12,7 +12,7 @@ export default function LightBox({toggleModal=undefined, modalDisplay}){
             setAnimateClass('')
         }, 500)
     }
-    console.log(animateClass)
+
     function toggleImage(id=null, index=null){
         removeAnimation()
         switch(id){

@@ -11,6 +11,7 @@ export default {
       colors:{
         'main':'#e60012',
         'hero-bg': '#d5eff9',
+        'nav-info': '#efefef',
         'copyright-bg':'#242424',
         'copyright-address':'#d0d0d0',
         'copyright-links':'#ffffff',
