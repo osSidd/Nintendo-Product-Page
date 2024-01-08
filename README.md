@@ -22,6 +22,7 @@ npm run dev
 - Making carousel using js and css
 - Adding animation to carousel and lightbox components
 - Making background blur using backdrop-filter property
+- Conditionally showing a section of menu after scroll threshold
 
 ## Tasks remaning
 - [x] Add hover effect on carousel card
