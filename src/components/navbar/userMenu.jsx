@@ -6,23 +6,28 @@ import Support from "../icons/support";
 import Wish from "../icons/wish";
 import Cart from '../icons/cart';
 import User from "../icons/user";
-import Search from '../icons/search';
+import SearchBar from "./searchBar";
+import { useState } from "react";
 
 export default function UserMenu(){
+
+    const [displaySearch, setDisplaySearch] = useState(false)
+
+    function toggleSearch(){
+        setDisplaySearch(prev => !prev)
+    }
+console.log(displaySearch    )
     return(
         
         <div className="flex ">
-            <div className="flex items-center w-5/12">
-                <a href="https://www.nintendo.com/us/" className="mr-auto">
-                    <div className="bg-main w-fit px-6 py-4 ">
-                        <img className='w-16' src={logo} alt="nintendo" />
+            <div className="flex items-center w-6/12">
+                <a href="https://www.nintendo.com/us/" className="mr-4">
+                    <div className="bg-main w-fit px-6 py-2" >
+                        <img className='h-8' src={logo} alt="nintendo" />
                     </div>
                 </a>
-                <div className="flex items-center justify-between border-b border-gray-400 w-96">
-                    <MenuHeading
-                        startIcon={<Search w={16}/>}
-                        menuText='Search'
-                    />
+                <div className="flex items-center justify-between border-b border-gray-400 w-full mr-16 pr-2 py-1">
+                    <SearchBar displaySearch={displaySearch} toggleSearch={toggleSearch}/>
                     <MenuHeading
                         menuText='All categories'
                         endIcon={true}

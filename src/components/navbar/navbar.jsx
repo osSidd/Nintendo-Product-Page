@@ -17,7 +17,7 @@ export default function Navbar(){
     }
 
     useEffect(() => {
-        window.addEventListener('scroll', debounce(show, 300))
+        window.addEventListener('scroll', debounce(show, 250))
 
         return () => {
             window.removeEventListener('scroll', show)
