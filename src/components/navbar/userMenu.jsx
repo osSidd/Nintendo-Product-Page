@@ -8,6 +8,7 @@ import Cart from '../icons/cart';
 import User from "../icons/user";
 import SearchBar from "./searchBar";
 import { useState } from "react";
+import Select from "./select";
 
 export default function UserMenu(){
 
@@ -28,10 +29,8 @@ console.log(displaySearch    )
                 </a>
                 <div className="flex items-center justify-between border-b border-gray-400 w-full mr-16 pr-2 py-1">
                     <SearchBar displaySearch={displaySearch} toggleSearch={toggleSearch}/>
-                    <MenuHeading
-                        menuText='All categories'
-                        endIcon={true}
-                    />
+                   
+                    <Select/>
                 </div>
             </div>
             <div className="ml-auto flex items-center mr-4">
