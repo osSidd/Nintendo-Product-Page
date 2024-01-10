@@ -15,10 +15,7 @@ export default function CarouselCard({product}){
                     {product.sellingPrice ? <p className='ml-4 line-through'>${product.mrp}</p>: null}
                     {product.discount ? <p className="ml-4 bg-red-600 px-4 text-white">{product.discount}%</p> : null}
                 </div>
-                <div className="flex items-center justify-between mt-2">
-                    <Platform platform={product.platform}/>
-                    <span><i className="fa fa-heart-o text-red-500 text-xl"></i></span>
-                </div>
+                <Platform platform={product.platform} icon={true}/>
             </div>
         </div>
     )

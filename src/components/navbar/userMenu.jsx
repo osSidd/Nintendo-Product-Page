@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import MenuHeading from "./MenuHeading";
 
 import logo from '../../assets/footer/nintendo.svg'
@@ -7,20 +9,13 @@ import Wish from "../icons/wish";
 import Cart from '../icons/cart';
 import User from "../icons/user";
 import SearchBar from "./searchBar";
-import { useState } from "react";
+import Close from '../icons/close';
 import Select from "./select";
 
-export default function UserMenu(){
+export default function UserMenu({displaySearch, toggleSearch}){
 
-    const [displaySearch, setDisplaySearch] = useState(false)
-
-    function toggleSearch(){
-        setDisplaySearch(prev => !prev)
-    }
-console.log(displaySearch    )
     return(
-        
-        <div className="flex ">
+        <div className="flex">
             <div className="flex items-center w-6/12">
                 <a href="https://www.nintendo.com/us/" className="mr-4">
                     <div className="bg-main w-fit px-6 py-2" >
@@ -29,11 +24,10 @@ console.log(displaySearch    )
                 </a>
                 <div className="flex items-center justify-between border-b border-gray-400 w-full mr-16 pr-2 py-1">
                     <SearchBar displaySearch={displaySearch} toggleSearch={toggleSearch}/>
-                   
                     <Select/>
                 </div>
             </div>
-            <div className="ml-auto flex items-center mr-4">
+            {displaySearch ? <div className="ml-auto mr-6 mt-3 cursor-pointer" onClick={toggleSearch}><Close/></div> : <div className="ml-auto flex items-center mr-4">
                 <div className='mr-6'>
                     <MenuHeading
                         startIcon={<Support w={18}/>}
@@ -68,7 +62,7 @@ console.log(displaySearch    )
                         alt="region" 
                     />
                 </a>
-            </div>
+            </div>}
         </div>
     )
 }

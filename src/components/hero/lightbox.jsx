@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import indicators from '../../static/heroImgs.json'
+import Close from '../icons/close'
 
 export default function LightBox({toggleModal=undefined, modalDisplay}){
 
@@ -48,7 +49,7 @@ export default function LightBox({toggleModal=undefined, modalDisplay}){
         <div className=" lg:w-7/12">
 
             <div className=" relative overflow-hidden">
-                <span onClick={toggleModal} className={`z-20 absolute ${modalDisplay ? 'block': 'hidden'} text-white text-4xl right-4 top-2`} ><i className='pointer-events-none fa fa-close'></i></span>
+                <span onClick={toggleModal} className={`z-20 absolute ${modalDisplay ? 'block': 'hidden'} text-white text-4xl right-4 top-2`} ><Close/></span>
                 <img className={`${animateClass} rounded-2xl`} src={indicators[imgIndex]} alt="lightbox" />
                 <div onClick={modalDisplay ? undefined : toggleModal} className={`opacity-0 hover:opacity-100 transition-opacity duration-300 flex ${modalDisplay ? 'cursor-pointer' : 'cursor-zoom-in'} absolute top-0 w-full h-full px-10 justify-between items-center text-white text-6xl z-0`}>
                     <span onClick={(e) => {e.stopPropagation(); toggleImage('L')}}><i className=" cursor-pointer fa fa-angle-left font-extrabold z-10"></i></span>
