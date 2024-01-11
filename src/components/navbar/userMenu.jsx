@@ -1,32 +1,17 @@
-import { useState } from "react";
-
 import MenuHeading from "./MenuHeading";
-
-import logo from '../../assets/footer/nintendo.svg'
 
 import Support from "../icons/support";
 import Wish from "../icons/wish";
 import Cart from '../icons/cart';
 import User from "../icons/user";
-import SearchBar from "./searchBar";
 import Close from '../icons/close';
-import Select from "./select";
+import LogoSearch from "./logoSearch";
 
 export default function UserMenu({displaySearch, toggleSearch}){
 
     return(
         <div className="flex">
-            <div className="flex items-center w-6/12">
-                <a href="https://www.nintendo.com/us/" className="mr-4">
-                    <div className="bg-main w-fit px-6 py-2" >
-                        <img className='h-8' src={logo} alt="nintendo" />
-                    </div>
-                </a>
-                <div className="flex items-center justify-between border-b border-gray-400 w-full mr-16 pr-2 py-1">
-                    <SearchBar displaySearch={displaySearch} toggleSearch={toggleSearch}/>
-                    <Select/>
-                </div>
-            </div>
+            <LogoSearch displaySearch={displaySearch} toggleSearch={toggleSearch}/>
             {displaySearch ? <div className="ml-auto mr-6 mt-3 cursor-pointer" onClick={toggleSearch}><Close/></div> : <div className="ml-auto flex items-center mr-4">
                 <div className='mr-6'>
                     <MenuHeading

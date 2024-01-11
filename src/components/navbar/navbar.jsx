@@ -33,7 +33,7 @@ export default function Navbar(){
 
     return (
         <nav className="relative pt-20">
-            <div className="fixed top-0 left-0 w-full z-50 bg-white">
+            <div className="fixed top-0 left-0 w-full z-30 bg-white">
                 <div className="">
                     <UserMenu displaySearch={displaySearch} toggleSearch={toggleSearch}/>
                     <DropDownMenu/>
@@ -43,7 +43,7 @@ export default function Navbar(){
                 <Offers/>
             </div>
             <InfoSection display={display}/>
-            {displaySearch ? <div className="absolute top-12 w-full z-50 pl-32 pt-8 pb-20 bg-white min-h-fit backdrop-contrast-150"><TopicsNProducts/> </div> : null}
+            {displaySearch ? <div className="absolute top-0 w-full z-30 pb-20 bg-white min-h-fit backdrop-contrast-150"><TopicsNProducts displaySearch={displaySearch} toggleSearch={toggleSearch}/> </div> : null}
         </nav>
     )
 }

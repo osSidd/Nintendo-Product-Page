@@ -8,7 +8,7 @@ import Play from '../icons/play'
 
 export default function DropDownMenu(){
     return(
-        <div className='flex items-center justify-center pt-2 border-t border-b border-gray-300'>
+        <div className='flex items-center justify-center pt-2 border-t border-b border-gray-300 z-50'>
             <div className='mr-10 border-b-4 border-main pb-1'>
                 <MenuHeading
                     startIcon={<Store color='#e60012' w={16}/>}
