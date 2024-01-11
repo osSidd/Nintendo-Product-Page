@@ -11,7 +11,7 @@ export default function Select(){
                 menuText={option}
                 endIcon={true}
             />
-            {clicked ? <div className=" cursor-pointer absolute top-6 left-0 w-32 py-2 text-sm shadow-lg rounded-xl bg-white ">
+            {clicked ? <div className=" cursor-pointer absolute top-6 left-0 w-32 py-2 text-sm shadow-lg rounded-xl bg-white z-50">
                 {
                     optArr.map(opt => (
                         <div key={opt} onClick={() => setOption(opt)} className="mt-2 hover:bg-slate-200 px-2">{opt}</div>

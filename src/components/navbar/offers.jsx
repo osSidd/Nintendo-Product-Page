@@ -3,7 +3,7 @@ import coins from '../../assets/navbar/coins.svg'
 
 export default function Offers(){
     return (
-        <div className='flex items-center justify-center py-3 bg-online'>
+        <div className='flex items-center justify-center pb-3 pt-5 bg-online'>
             <div className='flex items-center mr-4'>
                 <img className='mr-2' src={shipping} alt='shipping' />
                 <p className='mr-1'>

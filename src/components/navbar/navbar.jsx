@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
+
+import debounce from "../../utils/debounce";
+
 import DropDownMenu from "./dropDownMenu";
 import InfoSection from "./infoSection";
 import Offers from "./offers";
 import UserMenu from "./userMenu";
-import debounce from "../../utils/debounce";
 import TopicsNProducts from "./TopicsNProducts";
 
 
