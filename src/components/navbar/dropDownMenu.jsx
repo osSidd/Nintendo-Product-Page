@@ -1,14 +1,17 @@
 import MenuHeading from './MenuHeading'
 
+import dropdownObj from '../../static/dropdown'
+
 import Store from '../icons/store'
 import Games from '../icons/games'
 import Switch from '../icons/switch'
 import News from '../icons/news'
 import Play from '../icons/play'
+import DropDownMenuSection from './dropDownMenuSection'
 
 export default function DropDownMenu(){
     return(
-        <div className='flex items-center justify-center pt-2 border-t border-b border-gray-300 z-50'>
+        <div className='flex items-center justify-center pt-2 border-t border-b border-gray-300 z-50 relative'>
             <div className='mr-10 border-b-4 border-main pb-1'>
                 <MenuHeading
                     startIcon={<Store color='#e60012' w={16}/>}
@@ -44,6 +47,7 @@ export default function DropDownMenu(){
                     menuText='Play Nintendo'
                     endIcon={true}
                 />
+                <DropDownMenuSection dropdownObj={dropdownObj.play} />
             </div>
         </div>
     )
