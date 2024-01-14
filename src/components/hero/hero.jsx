@@ -21,7 +21,7 @@ export default function Hero(){
     }
 
     return (
-        <section className="bg-hero-bg min-h-screen relative">
+        <section className="bg-hero-bg lg:min-h-screen relative">
             <HeroCard toggleModal={toggleModal} modalDisplay={modalDisplay}/>
             <div className={`${modalDisplay ? 'block' : 'hidden'} transition-display duration-500 ease-in-out backdrop-blur backdrop-contrast-70 absolute w-full h-screen top-0 left-0 flex items-center justify-center z-50`}>
                 <LightBox toggleModal={toggleModal} modalDisplay={modalDisplay}/>
