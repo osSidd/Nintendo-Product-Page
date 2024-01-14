@@ -4,16 +4,16 @@ import Order from "../icons/order"
 import Redeem from "../icons/redeem"
 import Store from "../icons/store"
 
-export default function LoginDrawer(){
+export default function LoginDrawer({clicked, toggleClick}){
 
     const btnClass = 'font-semibold text-xl w-full py-3 rounded-xl text-center block'
     const bottomBtns = 'font-semibold w-full py-3 bg-white flex items-center pl-8 pr-6'
     
     return(
-        <div className="hidden absolute top-0 right-0 h-screen w-96 bg-nav-info px-6 pb-8 z-50 overflow-y-scroll">
+        <div className={`absolute top-0 ${clicked ? 'right-0' : '-right-96'} transition-all duration-700 ease-in-out h-screen w-96 bg-nav-info px-6 pb-8 z-50 overflow-y-scroll`}>
             <div className="flex justify-between items-center mt-8">
                 <h2 className="text-xl font-bold">Log in / Sign up</h2>
-                <span><Close/></span>
+                <span className="cursor-pointer" onClick={toggleClick}><Close/></span>
             </div>
             <div className="bg-white px-8 py-4 rounded-xl mt-8 ">
                 <img src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_300/Dev/Global%20Navigation/unauthd-asset.png" alt="login" />

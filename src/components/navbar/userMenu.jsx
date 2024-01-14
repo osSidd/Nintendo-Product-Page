@@ -7,8 +7,15 @@ import User from "../icons/user";
 import Close from '../icons/close';
 import LogoSearch from "./logoSearch";
 import LoginDrawer from "./loginDrawer";
+import { useState } from "react";
 
 export default function UserMenu({displaySearch, toggleSearch}){
+
+    const [clicked, setClicked] = useState(false)
+
+    function toggleClick(){
+        setClicked(prev => !prev)
+    }
 
     return(
         <div className="flex">
@@ -39,6 +46,8 @@ export default function UserMenu({displaySearch, toggleSearch}){
                     <MenuHeading
                         startIcon={<User w={18}/>}
                         menuText='Log in / Sign up'
+                        clicked={clicked}
+                        toggleClicked={toggleClick}
                     />
                 </div>
                 <a href="https://www.nintendo.com/us/regionselector/">
@@ -49,7 +58,7 @@ export default function UserMenu({displaySearch, toggleSearch}){
                     />
                 </a>
             </div>}
-            <LoginDrawer/>
+            <LoginDrawer clicked={clicked} toggleClick={toggleClick}/>
         </div>
     )
 }
