@@ -2,7 +2,7 @@ import DownloadBtn from "../downloadBtn";
 
 export default function InfoSection({display}){
     return(
-        <div className={`${display ? 'top-20' : 'top-3'} transition-all duration-700 fixed w-full flex items-center justify-between z-20 pt-6 pb-3 px-16 bg-nav-info`}>
+        <div className={`${display ? 'top-20' : 'top-3'} hidden lg:flex transition-all duration-700 fixed w-full items-center justify-between z-20 pt-6 pb-3 px-16 bg-nav-info`}>
             <h2 className="text-xl font-semibold">Stardew Valley</h2>
             <div className="flex items-center">
                 <span className="text-xs font-medium">Digital</span>
