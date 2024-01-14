@@ -6,6 +6,7 @@ import Cart from '../icons/cart';
 import User from "../icons/user";
 import Close from '../icons/close';
 import LogoSearch from "./logoSearch";
+import LoginDrawer from "./loginDrawer";
 
 export default function UserMenu({displaySearch, toggleSearch}){
 
@@ -48,6 +49,7 @@ export default function UserMenu({displaySearch, toggleSearch}){
                     />
                 </a>
             </div>}
+            <LoginDrawer/>
         </div>
     )
 }
