@@ -6,6 +6,11 @@ import Switch from "../components/icons/switch";
 import Release from "../components/icons/release";
 import Calender from "../components/icons/calender";
 import Games from "../components/icons/games";
+import Hardware from '../components/icons/hardware';
+import Merchandise from '../components/icons/merchandise';
+import Exclusive from "../components/icons/exclusive";
+import Characters from "../components/icons/characters";
+import Deals from "../components/icons/deals";
 
 export default {
     play: [
@@ -80,4 +85,119 @@ export default {
             icon: Games,
         },
     ],
+    store:[
+        {
+            label: 'Games',
+            href: 'https://www.nintendo.com/us/store/games/',
+            icon: Games,
+            links:[
+                {
+                    label: 'Nintendo Switch games',
+                    href: 'https://www.nintendo.com/us/store/games/nintendo-switch-games/'
+                },
+                {
+                    label: 'New releases',
+                    href: 'https://www.nintendo.com/us/store/games/new-releases/'
+                },
+                {
+                    label: 'Sales & deals',
+                    href: 'https://www.nintendo.com/us/store/sales-and-deals/'
+                }
+            ]
+        },
+        {
+            label: 'Hardware',
+            href: 'https://www.nintendo.com/us/store/hardware/',
+            icon: Hardware,
+            links: [
+                {
+                    label: 'Nintendo Switch systems',
+                    href: 'https://www.nintendo.com/us/store/hardware/systems/'
+                },
+                {
+                    label: 'Joy-Con & controllers',
+                    href: 'https://www.nintendo.com/us/store/hardware/joy-con-and-controllers/'
+                },
+                {
+                    label: 'Cases & more',
+                    href: 'https://www.nintendo.com/us/store/hardware/accessories/'
+                },
+                {
+                    label: 'Replacement parts',
+                    href: 'https://www.nintendo.com/us/store/hardware/parts/'
+                },
+            ]
+        },
+        {
+            label: 'Merchandise',
+            href: 'https://www.nintendo.com/us/store/merchandise/',
+            icon: Merchandise,
+            links: [
+                {
+                    label: 'Apparel & accessories',
+                    href: 'https://www.nintendo.com/us/store/merchandise/apparel/'
+                },
+                {
+                    label: 'Home & office',
+                    href: 'https://www.nintendo.com/us/store/merchandise/home-and-office/'
+                },
+                {
+                    label: 'Plush',
+                    href: 'https://www.nintendo.com/us/store/merchandise/plush/'
+                },
+                {
+                    label: 'Toys',
+                    href: 'https://www.nintendo.com/us/store/merchandise/toys/'
+                },
+            ]
+        },
+        {
+            label: 'Store exclusives',
+            href: 'https://www.nintendo.com/us/store/exclusives/',
+            icon: Exclusive,
+            links: [
+                {
+                    label: 'Exclusive products',
+                    href: 'https://www.nintendo.com/us/store/exclusives/products/'
+                },
+                {
+                    label: 'My Nintendo rewards',
+                    href: 'https://www.nintendo.com/us/store/exclusives/rewards/'
+                },
+                {
+                    label: 'Nintendo Switch Online offers',
+                    href: 'https://www.nintendo.com/us/store/exclusives/online/'
+                },
+            ]
+        },
+        {
+            label: 'Characters',
+            href: 'https://www.nintendo.com/us/store/characters/',
+            icon: Characters,
+            links: [
+                {
+                    label: 'Pikmin',
+                    href: 'https://www.nintendo.com/us/store/characters/pikmin/'
+                },
+                {
+                    label: 'Splatoon',
+                    href: 'https://www.nintendo.com/us/store/characters/splatoon/'
+                },
+                {
+                    label: 'Super Mario',
+                    href: 'https://www.nintendo.com/us/store/characters/mushroom-kingdom/'
+                },
+                {
+                    label: 'The Legend of Zelda',
+                    href: 'https://www.nintendo.com/us/store/characters/zelda/'
+                },  
+            ]
+        },
+        {
+            label: 'Sales & deals',
+            href: 'https://www.nintendo.com/us/store/sales-and-deals/',
+            icon: Deals,
+            links: []
+        }
+    ]
 }

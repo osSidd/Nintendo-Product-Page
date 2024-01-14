@@ -42,7 +42,7 @@ export default function DropDownMenu(){
                     clicked={clicked.store}
                     toggleClicked={() => toggleClicked('store')}
                 />
-                {/* <DropDownMenuSection clicked={clicked.store} dropdownObj={dropdownObj.store} /> */}
+                <DropDownMenuSection clicked={clicked.store} dropdownObj={dropdownObj.store} store={true} />
             </div>
             <div className='mr-10 pb-2'>
                 <MenuHeading
