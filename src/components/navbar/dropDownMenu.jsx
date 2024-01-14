@@ -42,7 +42,7 @@ export default function DropDownMenu(){
                     clicked={clicked.store}
                     toggleClicked={() => toggleClicked('store')}
                 />
-                <DropDownMenuSection clicked={clicked.store} dropdownObj={dropdownObj.store} store={true} />
+                <DropDownMenuSection toggleClicked={toggleClicked} clicked={clicked.store} dropdownObj={dropdownObj.store} store={true} />
             </div>
             <div className='mr-10 pb-2'>
                 <MenuHeading
@@ -52,7 +52,7 @@ export default function DropDownMenu(){
                     clicked={clicked.games}
                     toggleClicked={() => toggleClicked('games')}
                 />
-                <DropDownMenuSection clicked={clicked.games} dropdownObj={dropdownObj.games} />
+                <DropDownMenuSection toggleClicked={toggleClicked} clicked={clicked.games} dropdownObj={dropdownObj.games} />
             </div>
             <div className='mr-10  pb-2'>
                 <MenuHeading
@@ -62,7 +62,7 @@ export default function DropDownMenu(){
                     clicked={clicked.switch}
                     toggleClicked={() => toggleClicked('switch')}
                 />
-                <DropDownMenuSection clicked={clicked.switch} dropdownObj={dropdownObj.switch} />
+                <DropDownMenuSection toggleClicked={toggleClicked} clicked={clicked.switch} dropdownObj={dropdownObj.switch} />
             </div>
             <div className='mr-10  pb-2'>
                 <MenuHeading
@@ -79,7 +79,7 @@ export default function DropDownMenu(){
                     clicked={clicked.play}
                     toggleClicked={() => toggleClicked('play')}
                 />
-                <DropDownMenuSection clicked={clicked.play} dropdownObj={dropdownObj.play} />
+                <DropDownMenuSection toggleClicked={toggleClicked} clicked={clicked.play} dropdownObj={dropdownObj.play} />
             </div>
         </div>
     )
