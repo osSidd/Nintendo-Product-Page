@@ -1,6 +1,8 @@
 # Nintendo Product Page
 A landing page featuring image lightbox, carousels, multi-row menu. Made after Nintendo's product page (level 3 project listed in frontend practice) using ReactJs and tailwindcss.
 
+![Nintendo_product_page](./src/assets/nintendo.png)
+
 ## Technologies used
 - ReactJs
 - TailwindCSS
