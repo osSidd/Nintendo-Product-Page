@@ -23,6 +23,7 @@ npm run dev
 - Adding animation to carousel and lightbox components
 - Making background blur using backdrop-filter property
 - Conditionally showing a section of menu after scroll threshold
+- Used React Portals for displaying the lightbox modal
 
 ## Tasks remaning
 - [x] Add hover effect on carousel card
