@@ -67,9 +67,12 @@ export default function Navbar(){
             <div className="mt-2 hidden lg:block">
                 <Offers/>
             </div>
-            <InfoSection display={display}/>
+            <div className="relative">
+                <InfoSection display={display}/>
+            </div>
             {displaySearch ? <div className="hidden lg:block absolute top-0 w-full z-30 pb-20 bg-white min-h-fit backdrop-contrast-150"><TopicsNProducts displaySearch={displaySearch} toggleSearch={toggleSearch}/> </div> : null}
             <div className="block md:hidden">
+                <InfoSection display={display} mobile={true}/>
                 <MobileMenu/>
             </div>
         </nav>
