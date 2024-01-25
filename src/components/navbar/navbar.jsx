@@ -9,6 +9,7 @@ import Offers from "./offers";
 import UserMenu from "./userMenu";
 import TopicsNProducts from "./TopicsNProducts";
 import StoreMenu from "../icons/storemenu";
+import MobileMenu from "./mobileMenu";
 
 
 export default function Navbar(){
@@ -68,6 +69,9 @@ export default function Navbar(){
             </div>
             <InfoSection display={display}/>
             {displaySearch ? <div className="hidden lg:block absolute top-0 w-full z-30 pb-20 bg-white min-h-fit backdrop-contrast-150"><TopicsNProducts displaySearch={displaySearch} toggleSearch={toggleSearch}/> </div> : null}
+            <div className="block md:hidden">
+                <MobileMenu/>
+            </div>
         </nav>
     )
 }
