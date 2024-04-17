@@ -25,7 +25,7 @@ export default function Navbar(){
         const top = document.documentElement.scrollTop
         if(top >= 450) setDisplay(true)
         else setDisplay(false)
-        console.log(top)
+        // console.log(top)
     }
 
     useEffect(() => {
