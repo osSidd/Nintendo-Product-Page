@@ -9,8 +9,8 @@ export default function Copyright(){
         `
 
     return(
-        <section className=' h-80 sm:h-72 lg:h-auto  flex flex-col lg:flex-row items-center lg:justify-between px-4 py-8 bg-footer-bg'>
-            <small className='md:w-5/12 xl:w-6/12 text-center lg:text-left text-copyright-address text-copyright-links-mobile md:text-xs'>
+        <section className=' h-80 lg:h-auto  flex flex-col lg:flex-row items-center lg:justify-between px-4 py-8 bg-footer-bg'>
+            <small className='md:w-7/12 lg:w-5/12 xl:w-6/12 text-center lg:text-left text-copyright-address text-copyright-links-mobile md:text-sm lg:text-xs'>
                 &copy; Nintendo. Games are property of their respective owners. Nintendo of America Inc. Headquarters are in Redmond, Washington, USA
             </small>
             <div className='mt-4 lg:mt-0 flex flex-row justify-center items-center md:w-6/12'>

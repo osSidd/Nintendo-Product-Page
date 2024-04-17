@@ -8,6 +8,10 @@ export default {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
+      screens:{
+        'xxs':'280px',
+        'xs':'360px'
+      },
       colors:{
         'main':'#e60012',
         'hero-bg': '#d5eff9',
