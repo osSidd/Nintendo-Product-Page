@@ -31,6 +31,7 @@ export default {
         'hero-desc': '18px',
         'sub-heading': '36px',
         'test-size': '36px',
+        'copyright-links-mobile':'10px'
       },
       lineHeight:{
         title: '64px',
