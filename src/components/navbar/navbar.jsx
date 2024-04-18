@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 import debounce from "../../utils/debounce";
 import logo from '../../assets/footer/nintendo.svg';
+import coins from '../../assets/navbar/coins.svg'
 
 import DropDownMenu from "./dropDownMenu";
 import InfoSection from "./infoSection";
@@ -29,7 +30,7 @@ export default function Navbar(){
     }
 
     useEffect(() => {
-        window.addEventListener('scroll', debounce(show, 250))
+        window.addEventListener('scroll', debounce(show, 25))
 
         return () => {
             window.removeEventListener('scroll', show)
@@ -49,9 +50,9 @@ export default function Navbar(){
                     <img src="https://assets.nintendo.com/image/upload/c_scale,w_24,q_auto/ncom/global/flags-change-region/FlagUsaIconRegionSelect.webp" alt="region" />
                 </a>
             </div>
-            <div className='flex lg:hidden items-center border-l border-gray-400 px-4 py-4 text-center text-sm '>
-                {/* <img className='mr-2' src={coins} alt='coins' /> */}
-                <p className="mx-auto w-fit">
+            <div className='w-full flex lg:hidden items-center justify-center bg-gray-100 px-4 py-4 text-center text-sm '>
+                <img className='mr-2' src={coins} alt='coins' />
+                <p className="w-fit">
                     <span className='mr-1'>Earn</span>
                     <a className='underline mr-1 font-bold' href="https://my.nintendo.com/about_gold_point?_gl=1*14cicqn*_ga*Njg1ODgwMzAxLjE3MDQwMDU2NDI.*_ga_F6ERC4HMNZ*MTcwNDUyMTUxMi4yMi4xLjE3MDQ1MjI3OTMuMC4wLjA." target="_blank" rel="noreferrer">My Nintendo Points
                     </a>

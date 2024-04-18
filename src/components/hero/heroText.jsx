@@ -2,7 +2,7 @@ import DownloadBtn from '../downloadBtn'
 import Platform from '../platform'
 export default function HeroText(){
     return(
-        <div className='w-full lg:w-5/12 mt-8 lg:mt-0 lg:pl-10'>
+        <div className='w-full md:w-5/12 mt-8 lg:mt-0 md:pl-10'>
             <Platform platform='Nintendo Switch'/>
             <h1 className='text-xl lg:text-3xl font-bold mt-4 lg:mt-6'>Stardew Valley</h1>
             <div className='flex justify-between mt-2 lg:mt-6'>
@@ -13,7 +13,7 @@ export default function HeroText(){
                 <img className='mr-2 w-6' src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_100/Design%20System/Component%20Library/Icon/my-nintendo-gold-coin.png" alt="coin" />
                 <small>Eligible for up to <span className='font-bold'>75</span> Gold Points</small>
             </div>
-            <DownloadBtn mt='mt-6' lgMt='mt-8' px='px-4' py='py-4' rounded='rounded-xl'/>            
+            <DownloadBtn mt='mt-6' lgMt='mt-8' px='px-4' py='py-4' text='xs:text-lg' rounded='rounded-xl'/>            
             <div className='mt-2 text-center lg:text-left'>
                 <small>This item will be sent to your system automatically after purchase.</small>
             </div>

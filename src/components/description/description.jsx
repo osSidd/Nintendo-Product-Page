@@ -11,8 +11,8 @@ export default function Description(){
     return(
         <section>
             <Wrapper>
-                <div className='flex flex-col lg:flex-row items-start'>
-                    <div className='w-full lg:w-6/12 pr-6'>
+                <div className='flex flex-col md:flex-row items-start'>
+                    <div className='w-full md:w-6/12 md:pr-6'>
                         <h2 className='text-xl font-bold'>You&apos;re moving to the valley...</h2>
                         <p className='mt-4'>
                             You’ve inherited your grandfather’s old farm plot in Stardew Valley. Armed with hand-me-down tools and a few coins, you set out to begin your new life. Can you learn to live off the land and turn these overgrown fields into a thriving home? It won’t be easy. Ever since Joja Corporation came to town, the old ways of life have all but disappeared. The community center, once the town’s most vibrant hub of activity, now lies in shambles. But the valley seems full of opportunity. With a little dedication, you might just be the one to restore Stardew Valley to greatness!
@@ -28,9 +28,9 @@ export default function Description(){
                         <div className='mt-1'>
                             <small>Software description provided by the publisher.</small>
                         </div>
-                        <a className='bg-main text-white text-lg font-bold px-6 py-3 rounded-xl mt-4 block w-fit' href="http://www.stardewvalley.net/" target='_blank' rel='noreferrer'>Explore this game&apos;s official website</a>
+                        <a className='bg-main text-white text-center xxs:text-xs xs:text-base md:text-lg font-bold px-6 py-3 rounded-xl mt-4 block w-full md:w-fit' href="http://www.stardewvalley.net/" target='_blank' rel='noreferrer'>Explore this game&apos;s official website</a>
                     </div>
-                    <div className='mt-6 lg:mt-0 lg:w-6/12 rounded-2xl overflow-hidden'>
+                    <div className='mt-6 lg:mt-0 md:w-6/12 rounded-2xl overflow-hidden'>
                         <img className='w-full' src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_600/ncom/en_US/games/switch/s/stardew-valley-switch/hero" alt="description" />
                     </div>
                 </div>

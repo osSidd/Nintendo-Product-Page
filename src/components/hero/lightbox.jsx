@@ -46,7 +46,7 @@ export default function LightBox({toggleModal=undefined, modalDisplay}){
     }
 
     return(
-        <div className=" w-full lg:w-7/12">
+        <div className=" w-full md:w-7/12">
 
             <div className=" relative overflow-hidden">
                 <span onClick={toggleModal} className={`z-20 absolute ${modalDisplay ? 'block': 'hidden'} text-white text-4xl right-4 top-2`} ><Close/></span>
