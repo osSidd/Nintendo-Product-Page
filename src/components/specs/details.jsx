@@ -10,8 +10,8 @@ export default function Details(){
                         <li className='flex items-start lg:items-center border-b border-border py-4 px-2' key={icon.id}>
                             <img className='mr-4' src={icon.icon} alt='icon' />
                             <p className='grid md:grid-cols-12 items-center w-full'>
-                                <span className='font-semibold text-lg lg:col-start-1 lg:col-span-4'>{specData[index].label}</span>
-                                <span className='lg:col-start-5 lg:col-end-12'>
+                                <span className='font-semibold text-lg md:col-start-1 md:col-span-4'>{specData[index].label}</span>
+                                <span className='md:col-start-5 md:col-end-12'>
                                     {
                                         specData[index].content.map((d, dIndex, arr) => (
                                             <span 
