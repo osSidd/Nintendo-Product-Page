@@ -1,0 +1,41 @@
+@media(min-height:800px){
+    #hero-section{
+        min-height: 87vh;
+    }
+}
+
+@media(min-height:825px){
+    #hero-section{
+        min-height: 75vh;
+    }
+}
+
+@media(min-height:912px){
+    #hero-section{
+        min-height: 70vh;
+    }
+}
+
+@media(min-height:1024px){
+    #hero-section{
+        min-height: 45vh;
+    }
+}
+
+@media(min-height:1368px){
+    #hero-section{
+        min-height: 40vh;
+    }
+}
+
+@media(min-width:1300px){
+    #hero-section{
+        min-height: 70vh;
+    }
+}
+
+@media(min-width:1368px){
+    #hero-section{
+        min-height: 80vh;
+    }
+}

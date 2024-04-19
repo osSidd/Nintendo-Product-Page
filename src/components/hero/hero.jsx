@@ -1,6 +1,7 @@
 import { useState } from "react";
 import HeroCard from "./heroCard";
 import Portal from "./portal";
+import './hero.css'
 
 export default function Hero(){
 
@@ -19,7 +20,7 @@ export default function Hero(){
     }
 
     return (
-        <section className="bg-hero-bg lg:min-h-screen relative">
+        <section id="hero-section" className="bg-hero-bg lg:min-h-screen relative">
             <HeroCard toggleModal={toggleModal} modalDisplay={modalDisplay}/>
             <Portal modalDisplay={modalDisplay} toggleModal={toggleModal}/>
         </section>
