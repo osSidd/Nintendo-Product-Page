@@ -7,7 +7,7 @@ import Specifications from "./components/specs/specification";
 
 export default function App(){
   return (
-    <div className=''>
+    <div className='w-full'>
       <header>
         <Navbar/>
         <Hero/>
