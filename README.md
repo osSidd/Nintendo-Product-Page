@@ -28,6 +28,7 @@ npm run dev
 - Used React Portals for displaying the lightbox modal
 
 ## Tasks remaning
+- [x] Made webpage responsive
 - [x] Add hover effect on carousel card
 - [ ] Add proper font family for each sections
 - [ ] Add transition in footer & copyright links
