@@ -6,7 +6,7 @@ export default function Select(){
     const [clicked, setClicked] = useState(false)
     const [option, setOption] = useState(optArr[0])
     return(
-        <div tabIndex={-1} onBlur={e => {e.relatedTarget === null && setClicked(false)}} onClick={() => setClicked(prev => !prev)} className="relative">
+        <div tabIndex={-1} onBlur={e => {e.relatedTarget === null && setClicked(false)}} onClick={() => setClicked(prev => !prev)} className="relative hidden md:block">
              <MenuHeading
                 menuText={option}
                 endIcon={true}
