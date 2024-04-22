@@ -5,7 +5,7 @@ import Select from "./select";
 export default function LogoSearch({displaySearch, toggleSearch}){
     return (
         <div className="flex items-center w-full lg:w-6/12">
-            <a href="https://www.nintendo.com/us/" className="mr-4 hidden md:block">
+            <a href="https://www.nintendo.com/us/" className="mr-4 hidden lg:block">
                 <div className="bg-main w-fit px-6 py-2" >
                     <img className='h-8' src={logo} alt="nintendo" />
                 </div>

@@ -7,7 +7,7 @@ import Close from '../icons/close'
 
 export default function TopicsNProducts({displaySearch, toggleSearch}){
     return(
-        <div className=' max-h-screen overflow-auto lg:h-full'>
+        <div className='max-h-screen overflow-auto lg:h-full'>
             <div className='flex items-center justify-between'>
                 <LogoSearch displaySearch={displaySearch} toggleSearch={toggleSearch} />
                 <div className="ml-auto mr-6 mt-3 cursor-pointer" onClick={toggleSearch}><Close/></div>
@@ -22,7 +22,7 @@ export default function TopicsNProducts({displaySearch, toggleSearch}){
                     }
                 </div>
                 <h2 className=' text-footer-heading text-2xl lg:text-base font-bold mb-2 mt-10 lg:mt-8'>Top store products</h2>
-                <div className='grid lg:grid-cols-2 lg:gap-x-4 gap-y-4 pr-4 lg:pr-0 pb-8 lg:pb-0 lg:w-2/3 mt-6 lg:mt-4'>
+                <div className='grid md:grid-cols-2 md:gap-x-4 gap-y-4 pr-4 lg:pr-0 pb-8 lg:pb-0 lg:w-2/3 mt-6 lg:mt-4 '>
                     {
                         store.map(str => (
                             <a key={str.label} href={str.href} target='_blank' rel='noreferrer'>
@@ -30,7 +30,7 @@ export default function TopicsNProducts({displaySearch, toggleSearch}){
                                 <img className='h-full w-40' src={str.img} alt="image"/>
                                 <div className='w-full mx-3 py-2'>
                                     <h3 className='font-semibold text-xs lg:text-sm'>{str.label}</h3>
-                                    <Platform platform={str.platform} icon={true}/>
+                                    <Platform platform={str.platform} icon={true} text='text-xs md:text-base'/>
                                 </div>
                             </div>
                             </a>

@@ -71,11 +71,18 @@ export default function Navbar(){
             <div className="relative">
                 <InfoSection display={display}/>
             </div>
-            {displaySearch ? <div className="hidden lg:block fixed top-0 w-full z-30 pb-20 bg-white shadow-2xl min-h-fit"><TopicsNProducts displaySearch={displaySearch} toggleSearch={toggleSearch}/> </div> : null}
+            {displaySearch ? 
+                <div className="hidden lg:block fixed top-0 w-full z-30 pb-20 bg-white shadow-2xl min-h-fit">
+                    <TopicsNProducts displaySearch={displaySearch} toggleSearch={toggleSearch}/>
+                </div> : 
+                null
+            }
             <div className="block lg:hidden">
-                <div style={{zIndex:60}} className="block lg:hidden fixed top-0 w-full pb-20 bg-white shadow-2xl min-h-fit"><TopicsNProducts displaySearch={displaySearch} toggleSearch={toggleSearch}/> </div>
+                <div className="block lg:hidden fixed top-0 w-full pb-20 bg-white shadow-2xl min-h-fit" style={{zIndex:60, display: displaySearch ? 'block' : 'none'}}>
+                    <TopicsNProducts displaySearch={displaySearch} toggleSearch={toggleSearch}/>
+                </div>
                 <InfoSection display={display} mobile={true}/>
-                <MobileMenu/>
+                <MobileMenu toggleSearch={toggleSearch}/>
             </div>
         </nav>
     )
