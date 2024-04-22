@@ -58,7 +58,9 @@ export default function UserMenu({displaySearch, toggleSearch}){
                     />
                 </a>
             </div>}
-            <LoginDrawer clicked={clicked} toggleClick={toggleClick}/>
+            <div className={`z-50 w-96 absolute top-0 ${clicked ? 'right-0' : '-right-96'} transition-all duration-700 ease-in-out`}>
+                <LoginDrawer toggleClick={toggleClick}/>
+            </div>
         </div>
     )
 }

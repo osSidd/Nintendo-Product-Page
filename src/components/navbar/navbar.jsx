@@ -11,15 +11,21 @@ import UserMenu from "./userMenu";
 import TopicsNProducts from "./TopicsNProducts";
 import StoreMenu from "../icons/storemenu";
 import MobileMenu from "./mobileMenu";
+import LoginDrawer from "./loginDrawer";
 
 
 export default function Navbar(){
 
     const [display, setDisplay] = useState(false)
+    const [displayDrawer, setDisplayDrawer] = useState(false)
     const [displaySearch, setDisplaySearch] = useState(false)
 
     function toggleSearch(){
         setDisplaySearch(prev => !prev)
+    }
+
+    function toggleDrawerDisplay(){
+        setDisplayDrawer(prev => !prev)
     }
 
     function show(){
@@ -82,7 +88,10 @@ export default function Navbar(){
                     <TopicsNProducts displaySearch={displaySearch} toggleSearch={toggleSearch}/>
                 </div>
                 <InfoSection display={display} mobile={true}/>
-                <MobileMenu toggleSearch={toggleSearch}/>
+                <MobileMenu toggleSearch={toggleSearch} toggleDrawerDisplay={toggleDrawerDisplay} displayDrawer={displayDrawer}/>
+                <div className={`z-20 fixed bottom-16 right-2 left-2 shadow-2xl  ${displayDrawer ? 'block' : 'hidden'} transition-all duration-700 ease-in-out`}>
+                    <LoginDrawer toggleClick={toggleDrawerDisplay}/>
+                </div>
             </div>
         </nav>
     )

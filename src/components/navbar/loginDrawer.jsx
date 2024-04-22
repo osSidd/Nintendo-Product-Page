@@ -4,13 +4,13 @@ import Order from "../icons/order"
 import Redeem from "../icons/redeem"
 import Store from "../icons/store"
 
-export default function LoginDrawer({clicked, toggleClick}){
+export default function LoginDrawer({toggleClick}){
 
     const btnClass = 'font-semibold text-xl w-full py-3 rounded-xl text-center block'
     const bottomBtns = 'font-semibold w-full py-3 bg-white flex items-center pl-8 pr-6'
     
     return(
-        <div className={`absolute top-0 ${clicked ? 'right-0' : '-right-96'} transition-all duration-700 ease-in-out h-screen w-96 bg-nav-info px-6 pb-8 z-50 overflow-y-scroll`}>
+        <div className={`h-screen w-full bg-nav-info px-6 pb-8 overflow-y-scroll`}>
             <div className="flex justify-between items-center mt-8">
                 <h2 className="text-xl font-bold">Log in / Sign up</h2>
                 <span className="cursor-pointer" onClick={toggleClick}><Close/></span>
@@ -42,30 +42,30 @@ export default function LoginDrawer({clicked, toggleClick}){
                 <a className={`${btnClass} bg-white border border-main text-main`} href="https://accounts.nintendo.com/authorize_age_gate_us?redirect_uri=https%3A%2F%2Fwww.nintendo.com%2Fus%2Fstore%2Fproducts%2Fstardew-valley-switch%2F&lang=en-us&_gl=1*syxdh1*_ga*Njg1ODgwMzAxLjE3MDQwMDU2NDI.*_ga_F6ERC4HMNZ*MTcwNTIxMTcyOC4zMi4xLjE3MDUyMTY4MDYuMC4wLjA." target="_blank" rel="noreferrer">Sign up</a>
             </div>
             <div className="mt-5">
-                <a href="https://www.nintendo.com/us/orders/" className={`${bottomBtns} rounded-2xl`}>
+                <a href="https://www.nintendo.com/us/orders/" className={`${bottomBtns} rounded-2xl flex items-center`}>
                     <span className="mr-2 text-main"><Order/></span>
                     <span>Order status</span>
                 </a>
             </div>
             <div className="mt-8 rounded-2xl overflow-hidden">
                 <div>
-                    <a href="https://my.nintendo.com/?_gl=1*l3sg9q*_ga*Njg1ODgwMzAxLjE3MDQwMDU2NDI.*_ga_F6ERC4HMNZ*MTcwNTIxOTcyNC4zMy4wLjE3MDUyMTk3MjQuMC4wLjA." className={`${bottomBtns} border-b border-gray-300`}>
+                    <a href="https://my.nintendo.com/?_gl=1*l3sg9q*_ga*Njg1ODgwMzAxLjE3MDQwMDU2NDI.*_ga_F6ERC4HMNZ*MTcwNTIxOTcyNC4zMy4wLjE3MDUyMTk3MjQuMC4wLjA." className={`${bottomBtns} border-b border-gray-300 flex items-center`}>
                         <span className="mr-2 fill-main"><Store/></span>
-                        <span>Order status</span>
+                        <span>My Nintendo</span>
                         <span className="ml-auto"><Link/></span>
                     </a>
                 </div>
                 <div>
-                    <a href="https://ec.nintendo.com/redeem/?_gl=1*1ocaxru*_ga*Njg1ODgwMzAxLjE3MDQwMDU2NDI.*_ga_F6ERC4HMNZ*MTcwNTIxOTcyNC4zMy4wLjE3MDUyMTk3MjQuMC4wLjA.#/" className={`${bottomBtns} border-b border-gray-300`}>
+                    <a href="https://ec.nintendo.com/redeem/?_gl=1*1ocaxru*_ga*Njg1ODgwMzAxLjE3MDQwMDU2NDI.*_ga_F6ERC4HMNZ*MTcwNTIxOTcyNC4zMy4wLjE3MDUyMTk3MjQuMC4wLjA.#/" className={`${bottomBtns} border-b border-gray-300 flex items-center `}>
                         <span className="mr-2 text-main"><Redeem/></span>
-                        <span>Order status</span>
+                        <span>Redeem code</span>
                         <span className="ml-auto"><Link/></span>
                     </a>
                 </div>
                 <div>
-                    <a href="https://accounts.nintendo.com/?_gl=1*1gii9pc*_ga*Njg1ODgwMzAxLjE3MDQwMDU2NDI.*_ga_F6ERC4HMNZ*MTcwNTIxOTcyNC4zMy4wLjE3MDUyMTk3MjQuMC4wLjA." className={`${bottomBtns}`}>
+                    <a href="https://accounts.nintendo.com/?_gl=1*1gii9pc*_ga*Njg1ODgwMzAxLjE3MDQwMDU2NDI.*_ga_F6ERC4HMNZ*MTcwNTIxOTcyNC4zMy4wLjE3MDUyMTk3MjQuMC4wLjA." className={`${bottomBtns} flex items-center`}>
                         <span className="mr-2 text-main"><Account/></span>
-                        <span>Order status</span>
+                        <span>Account settings</span>
                         <span className="ml-auto"><Link/></span>
                     </a>
                 </div>
