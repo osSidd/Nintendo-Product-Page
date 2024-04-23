@@ -23,19 +23,19 @@ export default function MobileDropdownMenu({toggleMobileMenu}){
                 <DropdownItems Icon={<Store color='#e60012'/>} label='My Nintendo Store' drawer={true}/>
                 <DropdownItems Icon={<Games color='#e60012'/>} label='Games' drawer={true}/>
                 <DropdownItems Icon={<Switch color='#e60012'/>} label='Nintendo Switch' drawer={true}/>
-                <DropdownItems Icon={<News color='#e60012'/>} label='News & Events' drawer={false}/>
+                <DropdownItems Icon={<News color='#e60012'/>} label='News & Events' href='https://www.nintendo.com/us/whatsnew/' drawer={false}/>
                 <DropdownItems Icon={<Play color='#e60012'/>} label='Play Nintendo' drawer={true}/>
                 <div className="mt-4">
-                    <DropdownItems Icon={<Support color='#e60012'/>} label='Support' drawer={false}/>
-                    <DropdownItems Icon={<img className="rounded" src={language} alt="language"/>} label='Change Region' drawer={false}/>
+                    <DropdownItems Icon={<Support color='#e60012'/>} label='Support' href='https://en-americas-support.nintendo.com/' drawer={false}/>
+                    <DropdownItems Icon={<img className="rounded" src={language} alt="language"/>} href='https://www.nintendo.com/us/regionselector/' label='Change Region' drawer={false}/>
                 </div>
             </div>
         </div>
     )
 }
 
-function DropdownItems({Icon, label, drawer=false}){
-    return (
+function DropdownItems({Icon, label, drawer=false, href=false}){
+    const base = 
         <div className="flex items-center px-6 py-4 border-b border-gray-300 bg-white">
             <div className="mr-2">
                 {Icon}
@@ -47,5 +47,5 @@ function DropdownItems({Icon, label, drawer=false}){
                 }
             </div>
         </div>
-    )
+    return href ? <a href={href}>{base}</a> : base
 }

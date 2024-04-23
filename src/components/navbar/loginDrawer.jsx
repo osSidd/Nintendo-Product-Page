@@ -15,7 +15,7 @@ export default function LoginDrawer({toggleClick, mobile=false}){
                 <h2 className={`${mobile ? 'text-lg ml-auto' : 'text-xl'} font-bold`}>Log in / Sign up</h2>
                 <span className={`cursor-pointer ${mobile ? 'ml-auto' : ''}`} onClick={toggleClick}><Close/></span>
             </div>
-            <div className={`${mobile ? 'h-full overflow-y-auto pb-20' : ''}`}>
+            <div className={`${mobile ? 'h-full overflow-y-auto pb-20 px-4' : ''}`}>
                 <div className={`bg-white px-8 py-4 rounded-xl mt-8`}>
                     <img src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_300/Dev/Global%20Navigation/unauthd-asset.png" alt="login" />
                     <div>
