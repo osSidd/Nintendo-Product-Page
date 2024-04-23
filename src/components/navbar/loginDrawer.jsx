@@ -4,13 +4,13 @@ import Order from "../icons/order"
 import Redeem from "../icons/redeem"
 import Store from "../icons/store"
 
-export default function LoginDrawer({toggleClick}){
+export default function LoginDrawer({toggleClick, mobile=false}){
 
     const btnClass = 'font-semibold text-xl w-full py-3 rounded-xl text-center block'
     const bottomBtns = 'font-semibold w-full py-3 bg-white flex items-center pl-8 pr-6'
     
     return(
-        <div className={`h-screen w-full bg-nav-info px-6 pb-8 overflow-y-scroll`}>
+        <div style={{height: mobile ? '70vh' : '100vh'}} className={`w-full rounded-t-3xl bg-nav-info px-6 pb-8 overflow-y-scroll`}>
             <div className="flex justify-between items-center mt-8">
                 <h2 className="text-xl font-bold">Log in / Sign up</h2>
                 <span className="cursor-pointer" onClick={toggleClick}><Close/></span>

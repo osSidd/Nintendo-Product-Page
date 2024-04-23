@@ -12,16 +12,22 @@ import TopicsNProducts from "./TopicsNProducts";
 import StoreMenu from "../icons/storemenu";
 import MobileMenu from "./mobileMenu";
 import LoginDrawer from "./loginDrawer";
+import MobileDropdownMenu from "./mobileDropdownMenu";
 
 
 export default function Navbar(){
 
     const [display, setDisplay] = useState(false)
     const [displayDrawer, setDisplayDrawer] = useState(false)
+    const [displayMenu, setDisplayMenu] = useState(false)
     const [displaySearch, setDisplaySearch] = useState(false)
 
     function toggleSearch(){
         setDisplaySearch(prev => !prev)
+    }
+
+    function toggleMobileMenu(){
+        setDisplayMenu(prev => !prev)
     }
 
     function toggleDrawerDisplay(){
@@ -88,9 +94,12 @@ export default function Navbar(){
                     <TopicsNProducts displaySearch={displaySearch} toggleSearch={toggleSearch}/>
                 </div>
                 <InfoSection display={display} mobile={true}/>
-                <MobileMenu toggleSearch={toggleSearch} toggleDrawerDisplay={toggleDrawerDisplay} displayDrawer={displayDrawer}/>
+                <MobileMenu toggleSearch={toggleSearch} toggleDrawerDisplay={toggleDrawerDisplay} displayDrawer={displayDrawer} displayMenu={displayMenu} toggleMobileMenu={toggleMobileMenu}/>
+                <div className={`fixed bottom-16 z-40 left-2 right-2 shadow-2xl ${displayMenu ? 'block' : 'hidden'}`}>
+                    <MobileDropdownMenu toggleMobileMenu={toggleMobileMenu}/>
+                </div>
                 <div className={`z-20 fixed bottom-16 right-2 left-2 shadow-2xl  ${displayDrawer ? 'block' : 'hidden'} transition-all duration-700 ease-in-out`}>
-                    <LoginDrawer toggleClick={toggleDrawerDisplay}/>
+                    <LoginDrawer toggleClick={toggleDrawerDisplay} mobile={true}/>
                 </div>
             </div>
         </nav>
