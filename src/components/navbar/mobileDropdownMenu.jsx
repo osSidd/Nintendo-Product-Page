@@ -8,6 +8,8 @@ import Store from "../icons/store";
 import Support from "../icons/support";
 import Switch from "../icons/switch";
 
+import dropdown from "../../static/dropdown";
+
 export default function MobileDropdownMenu({toggleMobileMenu}){
 
     const language = 'https://assets.nintendo.com/image/upload/c_scale,w_24,q_auto/ncom/global/flags-change-region/FlagUsaIconRegionSelect.webp'
@@ -69,6 +71,22 @@ function DropdownItems({Icon, label, drawer=false, href=false, toggleSubMenu}){
 }
 
 function SubMenuPage({toggleMobileMenu, toggleSubMenu, displaySubMenu}){
+
+    const label = (() => {
+        switch(displaySubMenu.content){
+            case 'My Nintendo Store':
+                return 'store'
+            case 'Games':
+                return 'games'
+            case 'Nintendo Switch':
+                return 'switch'
+            case 'Play Nintendo':
+                return 'play'
+        }
+    })()
+    console.log(label)
+    const subLinks = dropdown[label]
+
     return (
         <div className=" bg-nav-info rounded-t-3xl pb-8 overflow-clip">
             <div className="flex items-center justify-between px-4 py-6 border-b border-gray-300 bg-white">
@@ -81,7 +99,21 @@ function SubMenuPage({toggleMobileMenu, toggleSubMenu, displaySubMenu}){
                 </div>
             </div>
             <div className="h-72 overflow-y-auto">
-                
+                {
+                    subLinks.map(link => {
+                        return (
+                            label === 'store' ? 
+                            
+                            <div key={link.label}></div> : 
+
+                            <a href={link.href}>
+                                <div key={link.id} className="flex items-center px-6 py-4 border-b border-gray-300 bg-white">
+                                    <p className="font-semibold">{link.label}</p>
+                                </div>
+                            </a>
+                        )
+                    })
+                }
             </div>
         </div>
     )
