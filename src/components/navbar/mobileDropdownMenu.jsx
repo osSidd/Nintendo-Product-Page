@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Angle from "../icons/angle";
 import Close from "../icons/close";
 import Games from "../icons/games";
@@ -10,7 +10,7 @@ import Switch from "../icons/switch";
 
 import dropdown from "../../static/dropdown";
 
-export default function MobileDropdownMenu({toggleMobileMenu}){
+export default function MobileDropdownMenu({toggleMobileMenu, displayMenu}){
 
     const language = 'https://assets.nintendo.com/image/upload/c_scale,w_24,q_auto/ncom/global/flags-change-region/FlagUsaIconRegionSelect.webp'
 
@@ -18,6 +18,10 @@ export default function MobileDropdownMenu({toggleMobileMenu}){
         display: false,
         content: ''
     })
+
+    useEffect(() => {
+        if(!displayMenu) setDisplaySubMenu({display:false, content: ''})
+    }, [displayMenu])
 
     function toggleSubMenu(state, label){
         setDisplaySubMenu(prev => ({

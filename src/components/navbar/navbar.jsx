@@ -96,7 +96,7 @@ export default function Navbar(){
                 <InfoSection display={display} mobile={true}/>
                 <MobileMenu toggleSearch={toggleSearch} toggleDrawerDisplay={toggleDrawerDisplay} displayDrawer={displayDrawer} displayMenu={displayMenu} toggleMobileMenu={toggleMobileMenu}/>
                 <div className={`fixed bottom-16 z-40 left-2 right-2 md:left-48 md:right-48 shadow-2xl ${displayMenu ? 'block' : 'hidden'}`}>
-                    <MobileDropdownMenu toggleMobileMenu={toggleMobileMenu}/>
+                    <MobileDropdownMenu displayMenu={displayMenu} toggleMobileMenu={toggleMobileMenu}/>
                 </div>
                 <div className={`z-20 fixed bottom-16 right-2 left-2 md:left-48 md:right-48 shadow-2xl  ${displayDrawer ? 'block' : 'hidden'} transition-all duration-700 ease-in-out`}>
                     <LoginDrawer toggleClick={toggleDrawerDisplay} mobile={true}/>
