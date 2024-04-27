@@ -10,7 +10,7 @@ export default function TopicsNProducts({displaySearch, toggleSearch}){
         <div className='max-h-screen overflow-auto lg:h-full'>
             <div className='flex items-center justify-between'>
                 <LogoSearch displaySearch={displaySearch} toggleSearch={toggleSearch} />
-                <div className="ml-auto mr-6 mt-3 cursor-pointer" onClick={toggleSearch}><Close/></div>
+                <div className="ml-auto mr-4 lg:mr-6 mt-3 cursor-pointer" onClick={toggleSearch}><Close/></div>
             </div>
             <div className='pl-4 lg:pl-32 pt-8'>
                 <h2 className=' text-footer-heading text-2xl lg:text-base font-bold mb-2'>Trending topics</h2>
