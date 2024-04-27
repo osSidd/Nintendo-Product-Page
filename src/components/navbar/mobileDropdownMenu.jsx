@@ -56,12 +56,12 @@ export default function MobileDropdownMenu({toggleMobileMenu}){
 
 function DropdownItems({Icon, label, drawer=false, href=false, toggleSubMenu}){
     const base = 
-        <div className="flex items-center px-6 py-4 border-b border-gray-300 bg-white">
+        <div className="flex items-center px-6 py-4 border-b border-gray-300 bg-white"  onClick={drawer ? () => {toggleSubMenu(true, label)} : undefined}>
             <div className="mr-2">
                 {Icon}
             </div>
             <p className="font-semibold">{label}</p>
-            <div className="ml-auto" onClick={drawer ? () => {toggleSubMenu(true, label)} : undefined}>
+            <div className="ml-auto">
                 {
                     drawer ? <Angle/> : null
                 }
@@ -84,8 +84,20 @@ function SubMenuPage({toggleMobileMenu, toggleSubMenu, displaySubMenu}){
                 return 'play'
         }
     })()
-    console.log(label)
+
     const subLinks = dropdown[label]
+
+    const [expand, setExpand] = useState({
+        state: false,
+        label: ''
+    })
+
+    function toggleExpand(label){
+        setExpand(prev => ({
+            state: !prev.state,
+            label
+        }))
+    }
 
     return (
         <div className=" bg-nav-info rounded-t-3xl pb-8 overflow-clip">
@@ -103,8 +115,23 @@ function SubMenuPage({toggleMobileMenu, toggleSubMenu, displaySubMenu}){
                     subLinks.map(link => {
                         return (
                             label === 'store' ? 
-                            
-                            <div key={link.label}></div> : 
+                            <div key={link.label} onClick={() => {toggleExpand(link.label)}}>
+                               <div className="flex items-center justify-between px-6 py-4 border-b border-gray-300 bg-white">
+                                    <p className="font-semibold">{link.label}</p>
+                                    {link.links.length ? <div className=" rotate-90">
+                                        <Angle/>
+                                    </div> : null}
+                                </div>
+                                <div className={`px-8 py-5 ${expand.label === link.label && expand.state ? 'block' : 'hidden'}`}>
+                                    {
+                                        link.links.map(lnk => (
+                                            <a href={lnk.href} key={lnk.label} className="block mt-4 first:mt-0">
+                                                <p className="">{lnk.label}</p>
+                                            </a>
+                                        ))
+                                    }
+                                </div>
+                            </div> : 
 
                             <a href={link.href}>
                                 <div key={link.id} className="flex items-center px-6 py-4 border-b border-gray-300 bg-white">
