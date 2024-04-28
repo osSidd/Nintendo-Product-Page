@@ -6,7 +6,7 @@ import Close from '../icons/close';
 export default function DropDownMenuSection({clicked, dropdownObj, store=false, toggleClicked}){
     return(
         <div className={`${clicked ? 'block' : 'hidden'} shadow-xl absolute bg-white w-full top-12 left-0 z-40`}>
-            <div onClick={toggleClicked} className="absolute right-4 top-4 cursor-pointer"><Close/></div>
+            <div onClick={toggleClicked} className="absolute right-4 top-4 cursor-pointer text-white"><Close/></div>
             {
                 store ? 
                 <div className="h-80">

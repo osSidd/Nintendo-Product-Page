@@ -3,7 +3,7 @@ export default function DropDownStore({obj}){
     return(
         <div className="mx-auto">
             <a href={obj.href} rel="noreferrer" target="_blank" className="flex items-center">
-                <span className="mr-2 text-main"><Icon/></span>
+                <span className="mr-2 text-main"><Icon color='#e60012'/></span>
                 <span className="font-semibold hover:text-main">{obj.label}</span>
             </a>
             <div className="mt-2">
