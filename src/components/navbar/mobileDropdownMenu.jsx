@@ -38,9 +38,9 @@ export default function MobileDropdownMenu({toggleMobileMenu, displayMenu}){
         
         <div className=" bg-nav-info rounded-t-3xl pb-8 overflow-clip">
             <div className="flex items-center justify-center px-4 py-6 border-b border-gray-300 bg-white">
-                <h2 className="ml-auto font-semibold text-lg">Menu</h2>
-                <div className="ml-auto" onClick={toggleMobileMenu}>
-                    <Close/>
+                <h2 className="ml-auto font-semibold text-lg text-footer-heading">Menu</h2>
+                <div className="ml-auto text-footer-heading" onClick={toggleMobileMenu}>
+                    <Close color='#484848'/>
                 </div>
             </div>
             <div className="max-h-72 overflow-y-auto">
@@ -61,11 +61,11 @@ export default function MobileDropdownMenu({toggleMobileMenu, displayMenu}){
 function DropdownItems({Icon, label, drawer=false, href=false, toggleSubMenu}){
     const base = 
         <div className="flex items-center px-6 py-4 border-b border-gray-300 bg-white"  onClick={drawer ? () => {toggleSubMenu(true, label)} : undefined}>
-            <div className="mr-2">
+            <div className="mr-2 text-footer-heading">
                 {Icon}
             </div>
-            <p className="font-semibold">{label}</p>
-            <div className="ml-auto">
+            <p className="font-semibold text-footer-heading">{label}</p>
+            <div className="ml-auto text-footer-heading">
                 {
                     drawer ? <Angle/> : null
                 }
@@ -106,12 +106,12 @@ function SubMenuPage({toggleMobileMenu, toggleSubMenu, displaySubMenu}){
     return (
         <div className=" bg-nav-info rounded-t-3xl pb-8 overflow-clip">
             <div className="flex items-center justify-between px-4 py-6 border-b border-gray-300 bg-white">
-                <div className=" rotate-180  " onClick={() => {toggleSubMenu(false)}}>
+                <div className=" rotate-180  text-footer-heading" onClick={() => {toggleSubMenu(false)}}>
                     <Angle/>
                 </div>
-                <h2 className="font-semibold text-lg">{displaySubMenu.content}</h2>
-                <div className="" onClick={toggleMobileMenu}>
-                    <Close/>
+                <h2 className="font-semibold text-lg text-footer-heading">{displaySubMenu.content}</h2>
+                <div className=" text-footer-heading" onClick={toggleMobileMenu}>
+                    <Close color='#484848'/>
                 </div>
             </div>
             <div className="h-72 overflow-y-auto">
@@ -121,8 +121,8 @@ function SubMenuPage({toggleMobileMenu, toggleSubMenu, displaySubMenu}){
                             label === 'store' ? 
                             <div key={link.label} onClick={() => {toggleExpand(link.label)}}>
                                <div className="flex items-center justify-between px-6 py-4 border-b border-gray-300 bg-white">
-                                    <p className="font-semibold">{link.label}</p>
-                                    {link.links.length ? <div className=" rotate-90">
+                                    <p className="font-semibold text-footer-heading">{link.label}</p>
+                                    {link.links.length ? <div className=" rotate-90 text-footer-heading">
                                         <Angle/>
                                     </div> : null}
                                 </div>
@@ -130,7 +130,7 @@ function SubMenuPage({toggleMobileMenu, toggleSubMenu, displaySubMenu}){
                                     {
                                         link.links.map(lnk => (
                                             <a href={lnk.href} key={lnk.label} className="block mt-4 first:mt-0">
-                                                <p className="">{lnk.label}</p>
+                                                <p className="text-footer-heading">{lnk.label}</p>
                                             </a>
                                         ))
                                     }
@@ -139,7 +139,7 @@ function SubMenuPage({toggleMobileMenu, toggleSubMenu, displaySubMenu}){
 
                             <a href={link.href}>
                                 <div key={link.id} className="flex items-center px-6 py-4 border-b border-gray-300 bg-white">
-                                    <p className="font-semibold">{link.label}</p>
+                                    <p className="font-semibold text-footer-heading">{link.label}</p>
                                 </div>
                             </a>
                         )

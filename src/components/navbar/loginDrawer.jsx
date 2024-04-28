@@ -10,10 +10,10 @@ export default function LoginDrawer({toggleClick, mobile=false}){
     const bottomBtns = 'font-semibold w-full py-3 bg-white flex items-center pl-8 pr-6'
     
     return(
-        <div style={{height: mobile ? '70vh' : '100vh'}} className={`w-full rounded-t-3xl bg-nav-info ${mobile ? 'overflow-clip' : 'px-6 overflow-y-scroll'} pb-8 `}>
+        <div style={{height: mobile ? '70vh' : '100vh'}} className={` text-footer-heading w-full rounded-t-3xl bg-nav-info ${mobile ? 'overflow-clip' : 'px-6 overflow-y-scroll'} pb-8 `}>
             <div className={`flex ${mobile ? 'justify-center bg-white py-6 px-4': 'justify-between mt-8'} items-center`}>
-                <h2 className={`${mobile ? 'text-lg ml-auto' : 'text-xl'} font-bold`}>Log in / Sign up</h2>
-                <span className={`cursor-pointer ${mobile ? 'ml-auto' : ''}`} onClick={toggleClick}><Close/></span>
+                <h2 className={`${mobile ? 'text-lg ml-auto' : 'text-xl'} text-footer-heading font-bold`}>Log in / Sign up</h2>
+                <span className={`cursor-pointer ${mobile ? 'ml-auto' : ''}`} onClick={toggleClick}><Close color='#484848'/></span>
             </div>
             <div className={`${mobile ? 'h-full overflow-y-auto pb-20 px-4' : ''}`}>
                 <div className={`bg-white px-8 py-4 rounded-xl mt-8`}>
