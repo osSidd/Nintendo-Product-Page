@@ -2,7 +2,7 @@ import online from '../../assets/specs/online.svg'
 export default function Online(){
     return(
         <div className='bg-online flex flex-col lg:flex-row justify-between rounded-2xl px-8'>
-            <div className='mt-6 lg:max-w-lg'>
+            <div className='mt-6 lg:max-w-lg text-footer-heading'>
                 <img src={online} alt="online" />
                 <p className='mt-6 text-xl font-bold text-footer-heading'>
                     Play online, access classic NES™ and Super NES™ games, and more with a Nintendo Switch Online membership.

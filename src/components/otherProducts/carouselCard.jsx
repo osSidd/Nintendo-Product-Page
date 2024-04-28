@@ -4,9 +4,9 @@ export default function CarouselCard({product}){
     return (
         <div className='flex-shrink-0 mr-6 border border-border w-72 rounded-2xl overflow-hidden cursor-pointer'>
             <img className="transition-all duration-500 ease-in-out" src={product.img} alt="ooblets" />
-            <div className="px-4 py-4">
+            <div className="px-4 py-4 text-footer-heading">
                 <h3 className="font-semibold">{product.name}</h3>
-                <p className="text-sm mb-10">{product.date}</p>
+                <p className="text-xs mb-8 mt-1 text-gray-600">{product.date}</p>
                 {product.offer ? <p className="bg-red-600 w-fit rounded-full px-2 py-0.5 text-white text-xs font-semibold">
                     {product.offer}
                 </p>: null}

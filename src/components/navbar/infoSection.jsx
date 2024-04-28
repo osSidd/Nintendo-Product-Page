@@ -4,7 +4,7 @@ export default function InfoSection({display, mobile=null}){
     const lgClass = `${display ? 'top-20' : 'top-3'} hidden lg:flex w-full`
     const xsClass = `${display ? 'bottom-12 pt-6 pb-16' : 'bottom-6 pt-0 pb-0'} flex lg:hidden right-2 left-2 md:right-48 md:left-48 rounded-t-xl rounded-b-2xl`
     return(
-        <div className={`${mobile ? xsClass : lgClass} transition-all duration-700 fixed items-center justify-between z-20 lg:pt-6 lg:pb-3 px-2 md:px-4 lg:px-16 bg-nav-info`}>
+        <div className={`${mobile ? xsClass : lgClass} text-footer-heading transition-all duration-700 fixed items-center justify-between z-20 lg:pt-6 lg:pb-3 px-2 md:px-4 lg:px-16 bg-nav-info`}>
             <h2 className="hidden lg:block text-xl font-semibold">Stardew Valley</h2>
             <div className="w-full lg:w-auto flex items-center justify-between lg:justify-start">
                 <div className="block lg:flex items-center">

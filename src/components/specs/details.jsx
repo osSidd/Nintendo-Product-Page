@@ -4,7 +4,7 @@ import specData from '../../static/specs.json'
 export default function Details(){
     return (
         <div className='mb-32'>
-            <ul className='[&>li:first-child]:border-t border-border'>
+            <ul className='[&>li:first-child]:border-t border-border text-footer-heading'>
                 {
                     specIcons.map((icon, index) => (
                         <li className='flex items-start lg:items-center border-b border-border py-4 px-2' key={icon.id}>
