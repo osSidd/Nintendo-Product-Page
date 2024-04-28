@@ -1,3 +1,7 @@
+.change{
+    color: #484848;
+    fill: #484848;
+}
 .change:hover{
     --main: #e60012;
     color: var(--main);

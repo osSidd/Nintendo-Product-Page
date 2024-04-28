@@ -10,6 +10,7 @@ export default function Select(){
              <MenuHeading
                 menuText={option}
                 endIcon={true}
+                clicked={clicked}
             />
             {clicked ? <div className=" cursor-pointer absolute top-6 left-0 w-32 py-2 text-sm shadow-lg rounded-xl bg-white z-50">
                 {

@@ -32,6 +32,6 @@ npm run dev
 - [x] Add hover effect on carousel card
 - [ ] Add proper font family for each sections
 - [ ] Add transition in footer & copyright links
-- [ ] Add dropdown menu items
+- [x] Add dropdown menu items
 - [ ] Add animation to hero and description buttons
 - [ ] Make proper carousel using transform property
