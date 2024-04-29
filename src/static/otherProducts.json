@@ -7,7 +7,8 @@
         "sellingPrice": 19.99,
         "mrp": 29.99,
         "discount": 33,
-        "platform": "Nintendo Switch"
+        "platform": "Nintendo Switch",
+        "href": "https://www.nintendo.com/us/store/products/ooblets-switch/"
     },
     {
         "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_930/b_white/f_auto/q_auto/ncom/software/switch/70010000035808/c7e2f6fa63ac0ababd1c5806a3cf7da9de6a845aeca106c707f4204c817fdd40",
@@ -17,7 +18,8 @@
         "sellingPrice": 13.99,
         "mrp": 19.99,
         "discount": 30,
-        "platform": "Nintendo Switch"
+        "platform": "Nintendo Switch",
+        "href": "https://www.nintendo.com/us/store/products/potion-permit-switch/"
     },
     {
         "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_930/b_white/f_auto/q_auto/ncom/software/switch/70010000035711/e20cef68d8e08b6115e8880f1f4dca2ce901236eb887d77b32f1555108b72317",
@@ -27,7 +29,8 @@
         "sellingPrice": 8.56,
         "mrp": 14.99,
         "discount": 42,
-        "platform": "Nintendo Switch"
+        "platform": "Nintendo Switch",
+        "href": "https://www.nintendo.com/us/store/products/cozy-grove-switch/"
     },
     {
         "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_930/b_white/f_auto/q_auto/ncom/software/switch/70010000027619/9989957eae3a6b545194c42fec2071675c34aadacd65e6b33fdfe7b3b6a86c3a",
@@ -37,7 +40,8 @@
         "sellingPrice": 0,
         "mrp": 59.99,
         "discount": 0,
-        "platform": "Nintendo Switch"
+        "platform": "Nintendo Switch",
+        "href": "https://www.nintendo.com/us/store/products/animal-crossing-new-horizons-switch/"
     },
     {
         "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_930/b_white/f_auto/q_auto/ncom/en_US/games/switch/m/my-time-at-portia-switch/hero",
@@ -47,7 +51,8 @@
         "sellingPrice": 2.99,
         "mrp": 29.99,
         "discount": 90,
-        "platform": "Nintendo Switch"
+        "platform": "Nintendo Switch",
+        "href": "https://www.nintendo.com/us/store/products/my-time-at-portia-switch/"
     },
     {
         "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_930/b_white/f_auto/q_auto/ncom/software/switch/70010000033556/bcfb26d4b69f9e37066c4fe005bb83e8c3a71227e06fa06e67d31850566b9396",
@@ -57,7 +62,8 @@
         "sellingPrice": 0,
         "mrp": 39.99,
         "discount": 0,
-        "platform": "Nintendo Switch"
+        "platform": "Nintendo Switch",
+        "href": "https://www.nintendo.com/us/store/products/disney-dreamlight-valley-switch/"
     },
     {
         "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_930/b_white/f_auto/q_auto/ncom/software/switch/70010000047794/40f9e2f6d344d2607d4be72c6c4ebd3c18717ff87a56d6bbc303c42e58dd570d",
@@ -67,7 +73,8 @@
         "sellingPrice": 0,
         "mrp": 39.99,
         "discount": 0,
-        "platform": "Nintendo Switch"
+        "platform": "Nintendo Switch",
+        "href": "https://www.nintendo.com/us/store/products/ea-sports-fifa-23-nintendo-switch-legacy-edition-switch/"
     },
     {
         "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_930/b_white/f_auto/q_auto/ncom/software/switch/70010000057443/28eed210d4bfd08662f1713027af71d1f4dcc1c3cc57066533e96af7c55dc339",
@@ -77,7 +84,8 @@
         "sellingPrice": 27.49,
         "mrp": 49.99,
         "discount": 45,
-        "platform": "Nintendo Switch"
+        "platform": "Nintendo Switch",
+        "href": "https://www.nintendo.com/us/store/products/story-of-seasons-a-wonderful-life-switch/"
     },
     {
         "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_930/b_white/f_auto/q_auto/ncom/software/switch/70010000051900/e9246c890e982deb9a4cf6eae66d30f9160c3df7e3506b6efaf30dc842357153",
@@ -87,7 +95,8 @@
         "sellingPrice": 0,
         "mrp": 59.99,
         "discount": 0,
-        "platform": "Nintendo Switch"
+        "platform": "Nintendo Switch",
+        "href": "https://www.nintendo.com/us/store/products/nba-2k23-switch/"
     },
     {
         "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_930/b_white/f_auto/q_auto/ncom/en_US/games/switch/t/turnip-boy-commits-tax-evasion-switch/hero",
@@ -97,7 +106,8 @@
         "sellingPrice": 5.09,
         "mrp": 14.99,
         "discount": 66,
-        "platform": "Nintendo Switch"
+        "platform": "Nintendo Switch",
+        "href": "https://www.nintendo.com/us/store/products/turnip-boy-commits-tax-evasion-switch/"
     },
     {
         "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_930/b_white/f_auto/q_auto/ncom/en_US/games/switch/s/story-of-seasons-pioneers-of-olive-town-switch/hero",
@@ -107,7 +117,8 @@
         "sellingPrice": 0,
         "mrp": 39.99,
         "discount": 0,
-        "platform": "Nintendo Switch"
+        "platform": "Nintendo Switch",
+        "href": "https://www.nintendo.com/us/store/products/story-of-seasons-pioneers-of-olive-town-switch/"
     },
     {
         "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_930/b_white/f_auto/q_auto/ncom/software/switch/70010000044436/b840531e6ac440f533d3f4ab7e43efb53ddd2926c00e7aefbbcdad7c6f189717",
@@ -117,7 +128,8 @@
         "sellingPrice": 0,
         "mrp": 59.99,
         "discount": 0,
-        "platform": "Nintendo Switch"
+        "platform": "Nintendo Switch",
+        "href": "https://www.nintendo.com/us/store/products/mlb-the-show-22-switch/"
     },
     {
         "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_930/b_white/f_auto/q_auto/ncom/software/switch/70010000035831/f3a53fe0e588f7cf11b9138ccd2b320a4d5b68dabf6cd46d97bb6dca32ba4606",
@@ -127,7 +139,8 @@
         "sellingPrice": 6.59,
         "mrp": 11.99,
         "discount": 45,
-        "platform": "Nintendo Switch"
+        "platform": "Nintendo Switch",
+        "href": "https://www.nintendo.com/us/store/products/calico-switch/"
     },
     {
         "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_930/b_white/f_auto/q_auto/ncom/software/switch/70010000009167/aa76ed4ae6eed8a8160643e1ff1b9f964468270b9ed6a26fdae8bb4f91576ba1",
@@ -137,7 +150,8 @@
         "sellingPrice": 0,
         "mrp": 49.99,
         "discount": 0,
-        "platform": "Nintendo Switch"
+        "platform": "Nintendo Switch",
+        "href": "https://www.nintendo.com/us/store/products/dragon-quest-builders-2-switch/"
     },
     {
         "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_930/b_white/f_auto/q_auto/ncom/en_US/games/switch/y/yonder-the-cloud-catcher-chronicles-switch/hero",
@@ -147,7 +161,8 @@
         "sellingPrice": 0,
         "mrp": 29.99,
         "discount": 0,
-        "platform": "Nintendo Switch"
+        "platform": "Nintendo Switch",
+        "href": "https://www.nintendo.com/us/store/products/yonder-the-cloud-catcher-chronicles-switch/"
     },
     {
         "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_930/b_white/f_auto/q_auto/ncom/en_US/games/switch/s/subnautica-below-zero-switch/hero",
@@ -157,6 +172,7 @@
         "sellingPrice": 9.89,
         "mrp": 29.99,
         "discount": 67,
-        "platform": "Nintendo Switch"
+        "platform": "Nintendo Switch",
+        "href": "https://www.nintendo.com/us/store/products/subnautica-below-zero-switch/"
     }    
 ]

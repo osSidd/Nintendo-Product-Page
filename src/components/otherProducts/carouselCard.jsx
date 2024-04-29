@@ -2,7 +2,7 @@ import Platform from "../platform";
 
 export default function CarouselCard({product}){
     return (
-        <div className='flex-shrink-0 mr-6 border border-border w-72 rounded-2xl overflow-hidden cursor-pointer'>
+        <a href={product.href} target="_blank" rel="noreferrer" className='flex-shrink-0 mr-6 border border-border w-72 rounded-2xl overflow-hidden cursor-pointer'>
             <img className="transition-all duration-500 ease-in-out" src={product.img} alt="ooblets" />
             <div className="px-4 py-4 text-footer-heading">
                 <h3 className="font-semibold">{product.name}</h3>
@@ -17,6 +17,6 @@ export default function CarouselCard({product}){
                 </div>
                 <Platform platform={product.platform} icon={true}/>
             </div>
-        </div>
+        </a>
     )
 }
